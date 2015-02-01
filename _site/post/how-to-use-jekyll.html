@@ -118,7 +118,7 @@
 
 <h4>How to do some things in Jekyll</h4>
 
-<p>To make a blog post, the blog-post.md file needs to start with this yaml  </p>
+<p>To make a blog post, the blog-post.md file needs to start with this yaml [front matter][1]  </p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">---
 layout: page
 title: &quot;example user file&quot;
@@ -126,7 +126,7 @@ category: post
 date: 2015-01-30 22:01:06
 ---
 </code></pre></div>
-<p>To make a new page new-page.md the starting yaml looks like  </p>
+<p>To make a new page new-page.md the starting yaml front matter looks like  </p>
 <div class="highlight"><pre><code class="language-text" data-lang="text">---
 layout: page
 title: &quot;Opening and Closing Igor Pro&quot;
@@ -135,6 +135,27 @@ date: 2015-01-30 22:38:12
 order: 3
 ---
 </code></pre></div>
+<p>Reference links look like this</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">This links to [Jekyll front-matter page][1]
+This links to [Daring Fireball][2]
+
+[1] http://jekyllrb.com/docs/frontmatter/ &quot;Jekyll Front-Matter&quot;
+[2] https://daringfireball.net/projects/markdown/basics &quot;Markdown Bascis&quot;
+</code></pre></div>
+<p>I am keeping my local Jekyll sites in /Users/cudmore/Sites/Vascular-Analysis  </p>
+
+<p>To run Jekyll on a Mac,</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">cd /Users/cudmore/Sites/Vascular-Analysis
+jekyll serve --watch
+</code></pre></div>
+<p>View the site locally with  </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">http://localhost:4000/Vascular-Analysis/
+</code></pre></div>
+<p>View the site on Github</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">http://cudmore.github.io/Vascular-Analysis/
+</code></pre></div>
+<p>[1] http://jekyllrb.com/docs/frontmatter/ &quot;Jekyll Front-Matter&quot;</p>
+
 
                     </div>
                 
@@ -146,7 +167,7 @@ order: 3
                 <div id=footer class=span12>
                      <a href="http://robertcudmore.org/index.html">robertcudmore.org</a>
 
-Documentation for <a href="https://github.com/bruth/jekyll-docs-template">Vascular Analysis</a>
+Documentation for <a href="https://github.com/cudmore/Vascular-Analysis">Vascular Analysis</a>
 
                 </div>
             </div>
