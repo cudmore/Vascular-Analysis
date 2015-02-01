@@ -12,6 +12,6 @@ This website is documentation for software for the analysis on in vivo two-photo
 - Three dimensional
 - Written in [Igor Pro][1]
 
-<IMG SRC="/images/frontpage_example1.jpg" align="center" width="200">
+<IMG SRC="/images/frontpage_example1.jpg" align="center" width="450">
 
 [1]: http://wavemetrics.com
