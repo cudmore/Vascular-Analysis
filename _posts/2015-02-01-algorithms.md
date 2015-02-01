@@ -7,7 +7,7 @@ date: 2015-02-01 22:46:33
 
 ####Stack Alignment
 
-The beautiful thing is we do not do alignment in the traditional sense, there is no eed to modify your original .tif image files.  
+The beautiful thing is we do not do alignment in the traditional sense, there is no need to modify your original .tif image files.  
 
 Alignment is done by specifying a 'pivot point' that is common to all timepoints to be aligned.  
 
