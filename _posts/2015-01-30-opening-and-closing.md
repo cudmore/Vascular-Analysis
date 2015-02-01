@@ -1,10 +1,12 @@
 ---
 layout: page
-title: "Opening and Closing Igor Pro"
+title: "Opening and Closing"
 category: gettingstarted
 date: 2015-01-30 22:38:12
 order: 3
 ---
+
+This vascular analysis runs inside of [Igor Pro][1].  
 
 ####Open bHyperstack in Igor Pro  
 - Double-click on desktop icon bHyperstack.  
@@ -29,4 +31,8 @@ order: 3
     ￼
 
 <p class="important"><strong>Important:</strong> You are responsible for saving your work for each hyperstack. When you quit Igor Pro, your work is NOT AUTOMATICALLY SAVED.</p>
-    
+
+> You save your hyperstack using the save button in the main [hyperstack panel][2].
+
+[1]: http://wavemetrics.com
+[2]: /Vascular-Analysis/hyperstack-panel/ "hyperstack panel"
