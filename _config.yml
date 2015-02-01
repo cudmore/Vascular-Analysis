@@ -32,7 +32,8 @@ sections: [
 baseurl: '/Vascular-Analysis'
 
 # Dates are not included in permalinks
-permalink: none
+#permalink: none
+permalink: /:title
 
 # Syntax highlighting
 highlighter: pygments

@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>Vascular Analysis : Tracing Interface</title>
+        <title>Vascular Analysis : Workflow</title>
         <meta name="description" content="">
 
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
@@ -39,13 +39,13 @@
             
                 <li class=nav-header>x Getting Started</li>
             
-            <li data-order="3"><a href="/Vascular-Analysis/gettingstarted/opening-and-closing-igor-pro.html">Opening and Closing Igor Pro</a></li>
+            <li data-order="3"><a href="/Vascular-Analysis/opening-and-closing-igor-pro">Opening and Closing Igor Pro</a></li>
         
             
-            <li data-order="2"><a href="/Vascular-Analysis/gettingstarted/installation.html">Installation</a></li>
+            <li data-order="2"><a href="/Vascular-Analysis/installation">Installation</a></li>
         
             
-            <li data-order="1"><a href="/Vascular-Analysis/gettingstarted/download.html">Download</a></li>
+            <li data-order="1"><a href="/Vascular-Analysis/download">Download</a></li>
         
     
         
@@ -55,7 +55,7 @@
             
                 <li class=nav-header>x Tutorials</li>
             
-            <li data-order=""><a href="/Vascular-Analysis/tutorials/workflow.html">Workflow</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/workflow">Workflow</a></li>
         
     
         
@@ -65,13 +65,13 @@
             
                 <li class=nav-header>x Interface</li>
             
-            <li data-order=""><a href="/Vascular-Analysis/interface/Tracing-Interface.html">Tracing Interface</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/Tracing-Interface">Tracing Interface</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/interface/stack.html">Stack</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/stack">Stack</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/interface/hyperstack-panel.html">Hyperstack Panel</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/hyperstack-panel">Hyperstack Panel</a></li>
         
     
         
@@ -81,10 +81,10 @@
             
                 <li class=nav-header>x Reference</li>
             
-            <li data-order=""><a href="/Vascular-Analysis/reference/gotchas.html">Gotchas</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/gotchas">Gotchas</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/reference/faq.html">FAQ</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/faq">FAQ</a></li>
         
     
         
@@ -94,13 +94,13 @@
             
                 <li class=nav-header>Posts</li>
             
-            <li data-order=""><a href="/Vascular-Analysis/post/how-to-use-jekyll.html">How To Use Jekyll</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/how-to-use-jekyll">How To Use Jekyll</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/post/example-user-file.html">example user file</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/example-user-file">example user file</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/post/change-log.html">change log</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/change-log">change log</a></li>
         
     
 <!-- List additional links. It is recommended to add a divider
@@ -111,63 +111,36 @@
 
                     <div id=content class=span10>
                         <div class=page-header>
-    <h3>Tracing Interface
+    <h3>Workflow
         
     </h3>
 </div>
 
-<p>All three types of object (nodes, edges and slabs) have a similar interface to select, create, move and delete. All objects are placed in x/y and z where z is the currently viewed imaging plane.</p>
+<h4>(1) make nodes/edges/slabs in one timepoint</h4>
 
-<h4>Nodes (Nodes are vascular branch points)</h4>
+<p>Create a node: shift+click<br>
+Create an edge: select a source done, N+click a destination node<br>
+Create a slab: S-Click  </p>
 
-<ul>
-<li>Select: left-click (will turn yellow)<br></li>
-<li>Create: shift+click<br></li>
-<li>Move: select and press keyboard &#39;m&#39;, next click will be new posiiton<br></li>
-<li>Delete: select and press keyboard &#39;Del&#39;<br></li>
-<li>Notes: Use the Point Info window (open with shift+?)<br></li>
-</ul>
+<p>Once all slabs for an edge are done, review the slabs (and their radii) using left/right arrow keys.  </p>
 
-<h4>Edges (Edges are vascular tubes that connect one branch point to another)</h4>
+<p>If marking a subset of edges, only mark edges where you would put more than one slab, e.g. don&#39;t score super short edges.  </p>
 
-<ul>
-<li>Select: left-click a slab within the edge</li>
-<li>Create: Making a new edge is a two step process<br>
-(1) select the source node<br>
-(2) N-click the destination node (a line will be formed between them)<br></li>
-<li>Move: Edges cannot be moved</li>
-<li>Delete: right-click and select &#39;Delete Edge&#39;</li>
-<li>Notes: Use the Point Info window (open with shift+?)</li>
-</ul>
+<p>If an edge has a pericyte try and get a slab centered on it. If this is not possible, annotate the edge with a note about the pericyte.  </p>
 
-<h4>Slabs (Slabs are the actual tracing along a vascular tube)</h4>
+<p>Annotate your images (using node and edge notes) with anything that is out of the ordinary or just cool.  </p>
 
-<ul>
-<li>Select: left-click</li>
-<li>Create: S-Click</li>
-<li>Move: select and press keyboard &#39;m&#39;, next click will be new posiiton</li>
-<li>Delete: select and press keyboard &#39;Del&#39;</li>
-<li>Notes: Slabs do not have notes</li>
-</ul>
+<h4>(2) make similar nodes/edges/slabs in the next timepoint</h4>
 
-<blockquote>
-<p>Once a slab is selected you can scroll to the next/previous slab using keyboard left/right.</p>
-</blockquote>
+<h4>(3) connect nodes and then edges from one timepoint to the next using FindPnts</h4>
 
-<div></div>
+<p>Quality Control (not sure the order here)  </p>
 
-<blockquote>
-<p>It is sometimes hard to select a slab if it is not in the currently viewed imaging plane.
-Scroll the image up or down a bit and try again.</p>
-</blockquote>
+<h4>(4) check all slab diameters using search &#39;All Slabs&#39;</h4>
 
-<p class="important">
-Important: All objects are placed in x/y and z. Where z is the currently viewed imaging plane.
-</p>
+<h4>(5) make edge notes about pericytes</h4>
 
-<p class="important">
-When a node, edge, or slab is selected it will be visible in all imaging planes, not just the currently viewed imaging plane.
-</p>
+<h4>(6) mark edges as diving (d) or surface (s)</h4>
 
 
                     </div>

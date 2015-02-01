@@ -32,9 +32,32 @@ Reference links look like this
     This links to [Jekyll front-matter page][1]
     This links to [Daring Fireball][2]
     
-	[1] http://jekyllrb.com/docs/frontmatter/ "Jekyll Front-Matter"
-    [2] https://daringfireball.net/projects/markdown/basics "Markdown Bascis"
+	[1]: http://jekyllrb.com/docs/frontmatter/ "Jekyll Front-Matter"
+    [2]: https://daringfireball.net/projects/markdown/basics "Markdown Bascis"
     
+
+####Internal Links
+I edited _config.yml like this  
+
+	# Dates are not included in permalinks
+	#permalink: none
+	permalink: /:title
+
+I do not need to add anyhting special to my yaml frontmatter!  
+
+And now
+    this works as link to [stack]({{site.baseurl}}/stack/)
+this works as link to [stack]({{site.baseurl}}/stack/)
+
+    this also works, [Link to stack page][3]
+    [3]: {{site.baseurl}}/stack/ "stack"
+
+this also works, [Link to stack page][3]
+
+[3]: {{site.baseurl}}/stack/ "stack"
+
+
+####On the mac
 I am keeping my local Jekyll sites in /Users/cudmore/Sites/Vascular-Analysis  
 
 To run Jekyll on a Mac,

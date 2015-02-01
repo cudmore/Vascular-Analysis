@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>Vascular Analysis : Workflow</title>
+        <title>Vascular Analysis : How To Use Jekyll</title>
         <meta name="description" content="">
 
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
@@ -39,13 +39,13 @@
             
                 <li class=nav-header>x Getting Started</li>
             
-            <li data-order="3"><a href="/Vascular-Analysis/gettingstarted/opening-and-closing-igor-pro.html">Opening and Closing Igor Pro</a></li>
+            <li data-order="3"><a href="/Vascular-Analysis/opening-and-closing-igor-pro">Opening and Closing Igor Pro</a></li>
         
             
-            <li data-order="2"><a href="/Vascular-Analysis/gettingstarted/installation.html">Installation</a></li>
+            <li data-order="2"><a href="/Vascular-Analysis/installation">Installation</a></li>
         
             
-            <li data-order="1"><a href="/Vascular-Analysis/gettingstarted/download.html">Download</a></li>
+            <li data-order="1"><a href="/Vascular-Analysis/download">Download</a></li>
         
     
         
@@ -55,7 +55,7 @@
             
                 <li class=nav-header>x Tutorials</li>
             
-            <li data-order=""><a href="/Vascular-Analysis/tutorials/workflow.html">Workflow</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/workflow">Workflow</a></li>
         
     
         
@@ -65,13 +65,13 @@
             
                 <li class=nav-header>x Interface</li>
             
-            <li data-order=""><a href="/Vascular-Analysis/interface/Tracing-Interface.html">Tracing Interface</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/Tracing-Interface">Tracing Interface</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/interface/stack.html">Stack</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/stack">Stack</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/interface/hyperstack-panel.html">Hyperstack Panel</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/hyperstack-panel">Hyperstack Panel</a></li>
         
     
         
@@ -81,10 +81,10 @@
             
                 <li class=nav-header>x Reference</li>
             
-            <li data-order=""><a href="/Vascular-Analysis/reference/gotchas.html">Gotchas</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/gotchas">Gotchas</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/reference/faq.html">FAQ</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/faq">FAQ</a></li>
         
     
         
@@ -94,13 +94,13 @@
             
                 <li class=nav-header>Posts</li>
             
-            <li data-order=""><a href="/Vascular-Analysis/post/how-to-use-jekyll.html">How To Use Jekyll</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/how-to-use-jekyll">How To Use Jekyll</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/post/example-user-file.html">example user file</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/example-user-file">example user file</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/post/change-log.html">change log</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/change-log">change log</a></li>
         
     
 <!-- List additional links. It is recommended to add a divider
@@ -111,36 +111,69 @@
 
                     <div id=content class=span10>
                         <div class=page-header>
-    <h3>Workflow
+    <h3>How To Use Jekyll
         
     </h3>
 </div>
 
-<h4>(1) make nodes/edges/slabs in one timepoint</h4>
+<h4>How to do some things in Jekyll</h4>
 
-<p>Create a node: shift+click<br>
-Create an edge: select a source done, N+click a destination node<br>
-Create a slab: S-Click  </p>
+<p>To make a blog post, the blog-post.md file needs to start with this yaml [front matter][1]  </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">---
+layout: page
+title: &quot;example user file&quot;
+category: post
+date: 2015-01-30 22:01:06
+---
+</code></pre></div>
+<p>To make a new page new-page.md the starting yaml front matter looks like  </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">---
+layout: page
+title: &quot;Opening and Closing Igor Pro&quot;
+category: gettingstarted
+date: 2015-01-30 22:38:12
+order: 3
+---
+</code></pre></div>
+<p>Reference links look like this</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">This links to [Jekyll front-matter page][1]
+This links to [Daring Fireball][2]
 
-<p>Once all slabs for an edge are done, review the slabs (and their radii) using left/right arrow keys.  </p>
+[1]: http://jekyllrb.com/docs/frontmatter/ &quot;Jekyll Front-Matter&quot;
+[2]: https://daringfireball.net/projects/markdown/basics &quot;Markdown Bascis&quot;
+</code></pre></div>
+<h4>Internal Links</h4>
 
-<p>If marking a subset of edges, only mark edges where you would put more than one slab, e.g. don&#39;t score super short edges.  </p>
+<p>I edited _config.yml like this  </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"># Dates are not included in permalinks
+#permalink: none
+permalink: /:title
+</code></pre></div>
+<p>I do not need to add anyhting special to my yaml frontmatter!  </p>
 
-<p>If an edge has a pericyte try and get a slab centered on it. If this is not possible, annotate the edge with a note about the pericyte.  </p>
+<p>And now
+    this works as link to <a href="/Vascular-Analysis/stack/">stack</a>
+this works as link to <a href="/Vascular-Analysis/stack/">stack</a></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">this also works, [Link to stack page][3]
+[3]: /Vascular-Analysis/stack/ &quot;stack&quot;
+</code></pre></div>
+<p>this also works, <a href="/Vascular-Analysis/stack/" title="stack">Link to stack page</a></p>
 
-<p>Annotate your images (using node and edge notes) with anything that is out of the ordinary or just cool.  </p>
+<h4>On the mac</h4>
 
-<h4>(2) make similar nodes/edges/slabs in the next timepoint</h4>
+<p>I am keeping my local Jekyll sites in /Users/cudmore/Sites/Vascular-Analysis  </p>
 
-<h4>(3) connect nodes and then edges from one timepoint to the next using FindPnts</h4>
-
-<p>Quality Control (not sure the order here)  </p>
-
-<h4>(4) check all slab diameters using search &#39;All Slabs&#39;</h4>
-
-<h4>(5) make edge notes about pericytes</h4>
-
-<h4>(6) mark edges as diving (d) or surface (s)</h4>
+<p>To run Jekyll on a Mac,</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">cd /Users/cudmore/Sites/Vascular-Analysis
+jekyll serve --watch
+</code></pre></div>
+<p>View the site locally with  </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">http://localhost:4000/Vascular-Analysis/
+</code></pre></div>
+<p>View the site on Github</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">http://cudmore.github.io/Vascular-Analysis/
+</code></pre></div>
+<p>[1] http://jekyllrb.com/docs/frontmatter/ &quot;Jekyll Front-Matter&quot;</p>
 
 
                     </div>
