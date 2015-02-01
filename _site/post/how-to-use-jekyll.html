@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>Vascular Analysis : blog post 1</title>
+        <title>Vascular Analysis : How To Use Jekyll</title>
         <meta name="description" content="">
 
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
@@ -94,7 +94,13 @@
             
                 <li class=nav-header>Posts</li>
             
-            <li data-order=""><a href="/Vascular-Analysis/post/blog-post-1.html">blog post 1</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/post/how-to-use-jekyll.html">How To Use Jekyll</a></li>
+        
+            
+            <li data-order=""><a href="/Vascular-Analysis/post/example-user-file.html">example user file</a></li>
+        
+            
+            <li data-order=""><a href="/Vascular-Analysis/post/change-log.html">change log</a></li>
         
     
 <!-- List additional links. It is recommended to add a divider
@@ -105,12 +111,30 @@
 
                     <div id=content class=span10>
                         <div class=page-header>
-    <h3>blog post 1
+    <h3>How To Use Jekyll
         
     </h3>
 </div>
 
+<h4>How to do some things in Jekyll</h4>
 
+<p>To make a blog post, the blog-post.md file needs to start with this yaml  </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">---
+layout: page
+title: &quot;example user file&quot;
+category: post
+date: 2015-01-30 22:01:06
+---
+</code></pre></div>
+<p>To make a new page new-page.md the starting yaml looks like  </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">---
+layout: page
+title: &quot;Opening and Closing Igor Pro&quot;
+category: gettingstarted
+date: 2015-01-30 22:38:12
+order: 3
+---
+</code></pre></div>
 
                     </div>
                 
