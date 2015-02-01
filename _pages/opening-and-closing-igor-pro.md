@@ -1,1 +1,0 @@
-/Users/cudmore/Downloads/jekyll-docs-template-master/_posts/2015-01-30-opening-and-closing-igor-pro.md
