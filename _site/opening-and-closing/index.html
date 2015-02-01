@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>Vascular Analysis : Stack</title>
+        <title>Vascular Analysis : Opening and Closing</title>
         <meta name="description" content="">
 
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
@@ -120,50 +120,52 @@
 
                     <div id=content class=span10>
                         <div class=page-header>
-    <h3>Stack
+    <h3>Opening and Closing
         
     </h3>
 </div>
 
-<p><IMG SRC="../images/stack_example_1.jpg" ALIGN="RIGHT" WIDTH="300"></p>
+<p>This vascular analysis runs inside of <a href="http://wavemetrics.com">Igor Pro</a>.  </p>
 
-<h4>Stack window</h4>
-
-<p>Each timepoint in a hyperstack is a 3D volume (a stack).  </p>
-
-<h4>Open a stack window for a hyperstack and timepoint</h4>
-
-<ol>
-<li>select the hyperstack in main <a href="/Vascular-Analysis/hyperstack-panel/">Hyperstack panel</a></li>
-<li>fill in the timepoint</li>
-<li>click &#39;Hyperstack&#39; button</li>
-</ol>
-
-<h4>Interface</h4>
+<h4>Open bHyperstack in Igor Pro</h4>
 
 <ul>
-<li>Image contrast is critical, set it with the sliders</li>
-<li>Mouse wheel to scroll up and down through images</li>
+<li>Double-click on desktop icon bHyperstack.<br></li>
+<li>Inside Igor, activate the Hyperstack menu by clicking on the Igor command window.<br>
+The Igor command windows title is &#39;Untitled&#39;.<br></li>
+<li>Select menu &#39;Hyperstack -&gt; Load User File&#39; and select your .txt file.<br></li>
 </ul>
 
-<h4>Keyboard commands</h4>
-<div class="highlight"><pre><code class="language-text" data-lang="text">Arrow keys to pan left/right and up/down in the image  
-+/- keys to zoom in/out  
-Return/Enter keys to zoom all the way out  
-
-1/2 to switch channels 1/2  
-3/4 to view a sliding maximal z-projection of channels 1/2  
-Esc to cancel any selected nodes/edges/slabs  
-
-shift+? to open the &#39;Point Info&#39; window.  
-    Notes for Edges (E) and Nodes (N) can be viewed and set here.  
-</code></pre></div>
-<h4>Notes</h4>
+<h4>Load a hyperstack</h4>
 
 <ul>
-<li>Only one timepoint can be viewed at a time.</li>
-<li>Closing a stack window does not remove the stack from memory.</li>
+<li>In main Hyperstack panel, click &#39;Load&#39; button.</li>
+<li>You then load a hyperstack by opening a file ending in _T.ibw</li>
+<li>For example if your hyperstack is named a152<em>hs1, you would load the file &#39;a152</em>hs1_T.ibw&#39;</li>
 </ul>
+
+<h4>Save a hyperstack</h4>
+
+<ul>
+<li>Saving is done one hyperstack at a time.</li>
+<li>Select a hyperstack in main Hyperstack panel and click &#39;Save&#39; button.<br>
+The hyperstack will be saved on the hard-drive in the folder it was loaded from.</li>
+</ul>
+
+<h4>Quit Igor</h4>
+
+<ul>
+<li>Select menu &#39;Igor Pro -&gt; Quit Igor Pro</li>
+<li>You will be asked &#39;Do you want to save changes to experiment &quot;Untitled&quot; before quitting&#39;.<br>
+Answer No.<br>
+￼</li>
+</ul>
+
+<p class="important"><strong>Important:</strong> You are responsible for saving your work for each hyperstack. When you quit Igor Pro, your work is NOT AUTOMATICALLY SAVED.</p>
+
+<blockquote>
+<p>You save your hyperstack using the save button in the main <a href="/Vascular-Analysis/hyperstack-panel/" title="hyperstack panel">hyperstack panel</a>.</p>
+</blockquote>
 
 
                     </div>
