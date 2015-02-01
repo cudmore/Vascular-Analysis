@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Hyperstack Panel"
+title: "Hyperstack panel"
 category: interface
 date: 2015-01-30 22:46:06
 ---

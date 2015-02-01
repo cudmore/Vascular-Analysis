@@ -20,10 +20,10 @@ myhomepage: 'http://robertcudmore.org/index.html'
 
 # Default categories (in order) to appear in the navigation
 sections: [
-    ['gettingstarted', 'x Getting Started'],
-    ['tutorials', 'x Tutorials'],
-    ['interface', 'x Interface'],
-    ['reference', 'x Reference'],
+    ['gettingstarted', 'Getting Started'],
+    ['tutorials', 'Tutorials'],
+    ['interface', 'Interface'],
+    ['reference', 'Reference'],
     ['post', 'Posts']
 ]
 

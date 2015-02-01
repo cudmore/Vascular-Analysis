@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "How To Use Jekyll"
+title: "How to use Jekyll"
 category: post
 date: 2015-01-30 22:01:06
 ---
@@ -8,6 +8,12 @@ date: 2015-01-30 22:01:06
 
 ####How to do some things in Jekyll
 
+####Install on OSX
+
+> sudo gem install jekyll
+
+
+####Making posts and pages
 To make a blog post, the blog-post.md file needs to start with this yaml [front matter][1]  
 
 	---
@@ -26,6 +32,8 @@ To make a new page new-page.md the starting yaml front matter looks like
 	date: 2015-01-30 22:38:12
 	order: 3
 	---
+
+####Making external hypertext links
 
 Reference links look like this
 
