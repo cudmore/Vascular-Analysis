@@ -14,4 +14,4 @@ This website is documentation for software for the analysis on in vivo two-photo
 
 <IMG SRC="../images/frontpage_example1.jpg" align="center" width="200">
 
-[1]: http:/wavemetrics.com
+[1]: http://wavemetrics.com
