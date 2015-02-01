@@ -1,0 +1,115 @@
+body {
+    font-weight: 400;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.7);
+}
+
+
+/* i made this */
+H3 {
+    margin-top: 12px;
+    margin-bottom: 3px;
+}
+H4 {
+    font-size: 1.2em;
+    margin-top: 18px;
+    margin-bottom: 6px;
+}
+
+
+pre, code {
+    border: none;
+    border-radius: 0;
+    background-color: #f9f9f9;
+    font-size: 0.85em;
+}
+
+pre {
+    font-size: 1em;
+}
+
+code {
+    color: inherit;
+}
+
+#header {
+    border-bottom: 1px solid #eee;
+    margin-bottom: 2px;
+}
+
+#header a:hover {
+    text-decoration: none;
+}
+
+#footer {
+    margin: 20px 0;
+    font-size: 0.85em;
+    color: #999;
+    text-align: center;
+}
+
+#content > .page-header:first-child {
+    margin-top: 0;
+}
+
+#content > .page-header:first-child h2 {
+    margin-top: 0;
+}
+
+
+#navigation {
+    font-size: 0.9em;
+}
+
+#navigation li a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#navigation .nav-header {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+p.important {
+    background-color: #fbb;
+    position: relative; /* position is the position of the border */
+    left: 20px;
+    right: 20px;
+	width: 60%;
+	
+    margin-top: 20px; /* margin around the border */
+    margin-bottom: 20px;
+
+    border: 2px solid #a1a1a1;
+    border-radius: 10px;
+	
+    font-size: 1.1em;
+    color: #222;
+    text-indent: -15px ; /* makes hanging indent */
+    padding-left: 30px; /* padding is the inset of the text inside the border */
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+}
+
+p.tip {
+    background-color: #ffb; /* Only difference from p.important, I don't know how to share */
+    position: relative; /* position is the position of the border */
+    left: 20px;
+    right: 20px;
+	width: 60%;
+	
+    margin-top: 20px; /* margin around the border */
+    margin-bottom: 20px;
+
+    border: 2px solid #a1a1a1;
+    border-radius: 10px;
+	
+    font-size: 1.1em;
+    color: #222;
+    text-indent: -15px ; /* makes hanging indent */
+    padding-left: 30px; /* padding is the inset of the text inside the border */
+    padding-top: 5px;
+    padding-right: 15px;
+    padding-bottom: 5px;
+}
