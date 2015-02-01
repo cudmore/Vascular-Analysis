@@ -9,7 +9,7 @@ Each slab has a fit to the tube diameter. It is critical that this fit is correc
 
 <IMG SRC="../images/edit_slab_example1.jpg" ALIGN="LEFT" WIDTH="300">
 
-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;  
 
 <IMG SRC="../images/edit_slab_example_2.jpg" ALIGN="LEFT" WIDTH="300">
 
