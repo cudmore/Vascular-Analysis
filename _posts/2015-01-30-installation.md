@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Download"
+title: "Installation"
 category: gettingstarted
 date: 2015-01-30 22:37:47
 order: 1
