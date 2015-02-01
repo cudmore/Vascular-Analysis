@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "How To Use Jekyll"
+title: "How to use Jekyll"
 category: post
 date: 2015-01-30 22:01:06
 ---

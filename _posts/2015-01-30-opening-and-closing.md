@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Opening and Closing"
+title: "Opening and closing"
 category: gettingstarted
 date: 2015-01-30 22:38:12
 order: 3

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Editing Slabs"
+title: "Editing slabs"
 category: interface
 date: 2015-02-01 22:46:33
 ---

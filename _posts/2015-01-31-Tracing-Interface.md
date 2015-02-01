@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Tracing Interface"
+title: "Tracing interface"
 category: interface
 ---
 
