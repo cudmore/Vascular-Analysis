@@ -14,6 +14,8 @@ This website is documentation for software that analyzes and annotates timeserie
 - No need to run image registration
 - Written in [Igor Pro][1]
 
+<figure>
 <IMG SRC="/Vascular-Analysis/images/frontpage_example1.jpg" align="center" width="450">
+</figure>
 
 [1]: http://wavemetrics.com
