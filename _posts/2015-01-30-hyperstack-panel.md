@@ -22,12 +22,12 @@ If the hyperstack to load is a153_hs2 then load the file 'a153_hs2_T.ibw'
 - Click the 'Save' button
 - The hyperstack is saved in the same hard-drive folder it was opened from.
 
-####Opening a stack window for a single timepoint
+####Opening a [stack][1] window for a single timepoint
 1. select a hyperstack in the list
 2. fill in the timepoint
 3. click 'Stack' button.
 
-####Opening FindPnts to connect nodes and edges from one timepoint to the next
+####Opening [FindPnts][1] to connect nodes and edges from one timepoint to the next
 - Enter two sequential timepoints in 'Timepoint' and 'TP 2'
 - Click 'Find Points' button
 - See [FindPnt][1]
@@ -39,3 +39,4 @@ If the hyperstack to load is a153_hs2 then load the file 'a153_hs2_T.ibw'
 <p class="tip"><strong>Tip:</strong> If you lose the hyperstack panel, it can be reopened with menu Hyperstack -> Hyperstack Panel</p>
 
 [1]: /Vascular-Analysis/findpnts/ "findpnts"
+[2]: /Vascular-Analysis/stack/ "stack"

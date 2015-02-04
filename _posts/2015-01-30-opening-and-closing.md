@@ -15,13 +15,13 @@ This vascular analysis runs inside of [Igor Pro][1].
 - Select menu 'Hyperstack -> Load User File' and select your .txt file.  
 
 ####Load a hyperstack
-- In main Hyperstack panel, click 'Load' button.
+- In main [Hyperstack panel][2], click 'Load' button.
 - You then load a hyperstack by opening a file ending in _T.ibw
 - For example if your hyperstack is named a152_hs1, you would load the file 'a152_hs1_T.ibw'
 
 ####Save a hyperstack
 - Saving is done one hyperstack at a time.
-- Select a hyperstack in main Hyperstack panel and click 'Save' button.  
+- Select a hyperstack in main [Hyperstack panel][2] and click 'Save' button.  
     The hyperstack will be saved on the hard-drive in the folder it was loaded from.
 
 ####Quit Igor
@@ -29,7 +29,6 @@ This vascular analysis runs inside of [Igor Pro][1].
 - You will be asked 'Do you want to save changes to experiment "Untitled" before quitting'.  
     Answer No.  
     ￼
-
 <p class="important"><strong>Important:</strong> You are responsible for saving your work for each hyperstack. When you quit Igor Pro, your work is NOT AUTOMATICALLY SAVED.</p>
 
 > You save your hyperstack using the save button in the main [hyperstack panel][2].

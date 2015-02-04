@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>Vascular Analysis : Pivot Points</title>
+        <title>Vascular Analysis : Scoring tubes</title>
         <meta name="description" content="">
 
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
@@ -139,23 +139,60 @@
 
                     <div id=content class=span10>
                         <div class=page-header>
-    <h3>Pivot Points
+    <h3>Scoring tubes
         
     </h3>
 </div>
 
-<p>Pivot points allow 3D image stacks to be aligned from one timepoint to the next.</p>
+<h4 id="introduction">Introduction</h4>
 
-<p>Any node can be a pivot point. Select the node and press ‘Capture Pivot’.</p>
+<p>We want to add some more annotation to each vascular tube. We will be scoring each tube to describe:</p>
 
-<p>The pivot point will only align stacks whose nodes are connected (see <a href="/Vascular-Analysis/findpnts/" title="findpnts">FindPnts</a> for how to connect nodes together).</p>
+<ol>
+  <li>If it is a diving artery/vein</li>
+  <li>If it is a surface tube</li>
+  <li>Its branch order off a main diving artery/vein (the actual diving arteries/veins get branch order 0)</li>
+  <li>Whether or not the tube has a pericyte.</li>
+</ol>
 
-<p>If the guess in FindPnts starts to be wrong, pick a pivot point near the nodes you are working on and the Guess should get better.</p>
+<p>Because your tubes are connected across timepoints using <a href="/Vascular-Analysis/findpnts/">FindPnts</a> we can annotate tubes in <b>just one timepoint</b> and assuming the tubes don’t change (with respect to these annotations) we can generalize these annotations across all timepoints.</p>
 
-<h4 id="see-also">See Also</h4>
+<p>You want to choose a timepoint for this new tube annotation that is early on and still easy to see. Just don’t use the first timepoint.</p>
 
-<p><a href="/Vascular-Analysis/findpnts/" title="findpnts">FindPnts</a>,
-<a href="/Vascular-Analysis/workflow/" title="workflow">Workflow</a></p>
+<h4 id="scoring-tube-properties">Scoring tube properties</h4>
+
+<p>The main hyperstack stack window now has a ‘Score Tubes’ checkbox. When the ‘Score Tubes’ checkbox is on and you select an edge, the stack window will respond to the following keystrokes:</p>
+
+<ul>
+  <li>d : Diving (will turn off Surface)</li>
+  <li>s : Surface (will turn off DIving)</li>
+  <li>p : Has Pericyte</li>
+  <li>0 : Branch order 0 (use this for diving arteries/veins)</li>
+  <li>1 : Branch order 1</li>
+  <li>.</li>
+  <li>.</li>
+  <li>.</li>
+  <li>9 : Branch orer 9</li>
+  <li>Del : Clear branch order</li>
+</ul>
+
+<p>If you cannot determine the branch order of a tube, you want the branch order to be empty. Use keyboard ‘Del’ or just blank out ‘Branch Order’ in the ‘Point Info’ window.</p>
+
+<p>You can also bring up the <a href="/Vascular-Analysis/point-info/">Point Info</a> window (use keyboard shift+?) and set these values using check boxes for Diving, Surface and ‘Has Pericyte’ and a numerical field for ‘Branch Order’.</p>
+
+<h4 id="how-to-get-started">How to get started</h4>
+
+<ul>
+  <li>Open a stack window</li>
+  <li>Turn on ‘Score Tubes’ checkbox</li>
+  <li>Open point info window (shift + ?)</li>
+  <li>Select a tube</li>
+  <li>Try out some key strokes: d, s,p, 0, 1, 2, 3, …</li>
+  <li>
+    <p>See how the annotation changes in the point info window</p>
+  </li>
+  <li>You want to make sure you get all your tubes annotatd. Clicking around on different tubes in the stack window is not that reliable (you might miss a tube). Use the <a href="/Vascular-Analysis/search/">Search</a> window to generate a list of all tubes and go through each tube one-by-one.</li>
+</ul>
 
 
 

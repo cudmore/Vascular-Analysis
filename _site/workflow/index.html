@@ -80,7 +80,7 @@
             <li data-order="2"><a href="/Vascular-Analysis/vascular-tracing">Vascular tracing</a></li>
         
             
-            <li data-order="6"><a href="/Vascular-Analysis/point-info">Point Info</a></li>
+            <li data-order="6"><a href="/Vascular-Analysis/point-info">Point info</a></li>
         
             
             <li data-order="1"><a href="/Vascular-Analysis/hyperstack-panel">Hyperstack panel</a></li>
@@ -117,7 +117,10 @@
 
         
             
-                <li class=nav-header>Posts</li>
+                <li class=nav-header>Blog Posts</li>
+            
+            <li data-order="2"><a href="/Vascular-Analysis/scoring-tubes">Scoring tubes</a></li>
+        
             
             <li data-order=""><a href="/Vascular-Analysis/how-to-use-jekyll">How to use Jekyll</a></li>
         
@@ -176,7 +179,7 @@
   <li>Open FindPnts for two consecutive timepoints, e.g. timepoint 4 and 5.</li>
   <li>Selecting a row in the list in findpnts will open two stacks, snap the images to the same region and highlight the selected node (if they are connected).</li>
   <li>Use keyboard arrow keys in the FindPnts list to scroll through nodes. Keyboard left will flash the programs best guess, Keyboard right will flash the actual connection.</li>
-  <li>Keyboard shift + right-arrow will transfer the guess to the Dst.</li>
+  <li>Keyboard shift + right-arrow will transfer the Guess to the Dst.</li>
   <li>If the guess is not to your liking, select the nodes you want to connect (in their stack windows), right-click on the desired destination node and select ‘FindPnt -&gt; Dst’ menu. </li>
 </ul>
 
@@ -184,14 +187,15 @@
 
 <ul>
   <li>Check all slab diameters using <a href="/Vascular-Analysis/search/" title="search">search</a> ‘All Slabs’. Scroll through the list of slabs for a timepoint and the slab selected in the list will be selected in the image</li>
-  <li>Mark edges with pericytes using the <a href="/Vascular-Analysis/point-info/" title="point-info">Point Info</a> window</li>
 </ul>
 
-<h4 id="marking-edges-as-diving-andor-surface">(5) Marking edges as diving and/or surface</h4>
+<h4 id="marking-tubes-as-diving-surface-has-pericyte-and-marking-branch-order">(5) Marking tubes as diving, surface, has pericyte and marking branch order</h4>
 
 <ul>
-  <li>In one timepoint, mark tubes as diving (keyboard ‘d’) or surface (keyboard ‘s’). If a tube is neither, leave this blank.</li>
-  <li>In the same timepoint, mark the branch order of tubes 0..9</li>
+  <li>See <a href="/Vascular-Analysis/scoring-tubes/" title="scoring-tubes">Scoring tubes</a> for more information.</li>
+  <li>In one timepoint, mark all tubes as diving (keyboard ‘d’) or surface (keyboard ‘s’). If a tube is neither, leave this blank.</li>
+  <li>In the same timepoint, mark the branch order of each tubes 0..9. If you can’t determine the branch-order of a tube, leave it blank.</li>
+  <li>Mark tubes with pericytes (keyboard ‘p’)</li>
 </ul>
 
 

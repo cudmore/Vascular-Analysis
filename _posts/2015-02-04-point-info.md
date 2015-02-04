@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Point Info"
+title: "Point info"
 category: interface
 date: 2015-01-30 22:46:06
 order: 6

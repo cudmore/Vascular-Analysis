@@ -25,7 +25,7 @@ sections: [
     ['interface', 'Vascular Interface'],
     ['tutorials', 'Tutorials'],
     ['reference', 'Reference'],
-    ['post', 'Posts']
+    ['post', 'Blog Posts']
 ]
 
 # Keep as an empty string if served up at the root. If served up at a specific

@@ -6,7 +6,9 @@ date: 2015-01-30 22:01:06
 ---
 
 
-####How to do some things in Jekyll
+####How to do some things in [Jekyll][2]
+
+As of Feb 2015 I discovered Jekyll and this has rocked my world. Beautifully done. No more Word-Press for me !!!
 
 ####Install on OSX
 
@@ -45,7 +47,7 @@ Reference links look like this
     
 
 ####Internal Links
-I edited _config.yml like this  
+I edited [_config.yml][3] like this  
 
 	# Dates are not included in permalinks
 	#permalink: none
@@ -58,11 +60,10 @@ And now
 this works as link to [stack]({{site.baseurl}}/stack/)
 
     this also works, [Link to stack page][3]
-    [3]: {{site.baseurl}}/stack/ "stack"
+    [4]: {{site.baseurl}}/stack/ "stack"
 
-this also works, [Link to stack page][3]
+this also works, [Link to stack page][4]
 
-[3]: {{site.baseurl}}/stack/ "stack"
 
 
 ####On the mac
@@ -81,4 +82,7 @@ View the site on Github
 
     http://cudmore.github.io/Vascular-Analysis/
 
-[1] http://jekyllrb.com/docs/frontmatter/ "Jekyll Front-Matter"
+[1]: http://jekyllrb.com/docs/frontmatter/ "Jekyll Front-Matter"
+[2]: http://jekyllrb.com
+[3]: http://jekyllrb.com/docs/configuration/
+[4]: {{site.baseurl}}/stack/ "stack"
