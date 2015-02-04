@@ -71,6 +71,9 @@
             <li data-order=""><a href="/Vascular-Analysis/editing-slabs">Editing slabs</a></li>
         
             
+            <li data-order=""><a href="/Vascular-Analysis/For-Zeng-You">For Zeng You</a></li>
+        
+            
             <li data-order=""><a href="/Vascular-Analysis/Tracing-Interface">Tracing interface</a></li>
         
             
@@ -125,87 +128,74 @@
     </h3>
 </div>
 
-<h4 id="how-to-do-some-things-in-jekyll">How to do some things in Jekyll</h4>
+<h4>How to do some things in Jekyll</h4>
 
-<h4 id="install-on-osx">Install on OSX</h4>
+<h4>Install on OSX</h4>
 
 <blockquote>
-  <p>sudo gem install jekyll</p>
+<p>sudo gem install jekyll</p>
 </blockquote>
 
-<h4 id="making-posts-and-pages">Making posts and pages</h4>
-<p>To make a blog post, the blog-post.md file needs to start with this yaml [front matter][1]  </p>
+<h4>Making posts and pages</h4>
 
-<pre><code>---
+<p>To make a blog post, the blog-post.md file needs to start with this yaml [front matter][1]  </p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">---
 layout: page
-title: "example user file"
+title: &quot;example user file&quot;
 category: post
 date: 2015-01-30 22:01:06
 ---
-</code></pre>
-
+</code></pre></div>
 <p>To make a new page new-page.md the starting yaml front matter looks like  </p>
-
-<pre><code>---
+<div class="highlight"><pre><code class="language-text" data-lang="text">---
 layout: page
-title: "Opening and Closing Igor Pro"
+title: &quot;Opening and Closing Igor Pro&quot;
 category: gettingstarted
 date: 2015-01-30 22:38:12
 order: 3
 ---
-</code></pre>
-
-<h4 id="making-external-hypertext-links">Making external hypertext links</h4>
+</code></pre></div>
+<h4>Making external hypertext links</h4>
 
 <p>Reference links look like this</p>
-
-<pre><code>This links to [Jekyll front-matter page][1]
+<div class="highlight"><pre><code class="language-text" data-lang="text">This links to [Jekyll front-matter page][1]
 This links to [Daring Fireball][2]
 
-[1]: http://jekyllrb.com/docs/frontmatter/ "Jekyll Front-Matter"
-[2]: https://daringfireball.net/projects/markdown/basics "Markdown Bascis"
-</code></pre>
+[1]: http://jekyllrb.com/docs/frontmatter/ &quot;Jekyll Front-Matter&quot;
+[2]: https://daringfireball.net/projects/markdown/basics &quot;Markdown Bascis&quot;
+</code></pre></div>
+<h4>Internal Links</h4>
 
-<h4 id="internal-links">Internal Links</h4>
 <p>I edited _config.yml like this  </p>
-
-<pre><code># Dates are not included in permalinks
+<div class="highlight"><pre><code class="language-text" data-lang="text"># Dates are not included in permalinks
 #permalink: none
 permalink: /:title
-</code></pre>
-
+</code></pre></div>
 <p>I do not need to add anyhting special to my yaml frontmatter!  </p>
 
 <p>And now
     this works as link to <a href="/Vascular-Analysis/stack/">stack</a>
 this works as link to <a href="/Vascular-Analysis/stack/">stack</a></p>
-
-<pre><code>this also works, [Link to stack page][3]
-[3]: /Vascular-Analysis/stack/ "stack"
-</code></pre>
-
+<div class="highlight"><pre><code class="language-text" data-lang="text">this also works, [Link to stack page][3]
+[3]: /Vascular-Analysis/stack/ &quot;stack&quot;
+</code></pre></div>
 <p>this also works, <a href="/Vascular-Analysis/stack/" title="stack">Link to stack page</a></p>
 
-<h4 id="on-the-mac">On the mac</h4>
+<h4>On the mac</h4>
+
 <p>I am keeping my local Jekyll sites in /Users/cudmore/Sites/Vascular-Analysis  </p>
 
 <p>To run Jekyll on a Mac,</p>
-
-<pre><code>cd /Users/cudmore/Sites/Vascular-Analysis
+<div class="highlight"><pre><code class="language-text" data-lang="text">cd /Users/cudmore/Sites/Vascular-Analysis
 jekyll serve --watch
-</code></pre>
-
+</code></pre></div>
 <p>View the site locally with  </p>
-
-<pre><code>http://localhost:4000/Vascular-Analysis/
-</code></pre>
-
+<div class="highlight"><pre><code class="language-text" data-lang="text">http://localhost:4000/Vascular-Analysis/
+</code></pre></div>
 <p>View the site on Github</p>
-
-<pre><code>http://cudmore.github.io/Vascular-Analysis/
-</code></pre>
-
-<p>[1] http://jekyllrb.com/docs/frontmatter/ “Jekyll Front-Matter”</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">http://cudmore.github.io/Vascular-Analysis/
+</code></pre></div>
+<p>[1] http://jekyllrb.com/docs/frontmatter/ &quot;Jekyll Front-Matter&quot;</p>
 
 
                     </div>
