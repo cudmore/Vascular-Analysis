@@ -21,8 +21,9 @@ myhomepage: 'http://robertcudmore.org/index.html'
 # Default categories (in order) to appear in the navigation
 sections: [
     ['gettingstarted', 'Getting Started'],
+    ['imagingcore', 'Imaging Core'],
+    ['interface', 'Vascular Interface'],
     ['tutorials', 'Tutorials'],
-    ['interface', 'Interface'],
     ['reference', 'Reference'],
     ['post', 'Posts']
 ]

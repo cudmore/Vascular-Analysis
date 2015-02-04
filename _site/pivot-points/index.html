@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>Vascular Analysis : Tracing interface</title>
+        <title>Vascular Analysis : Pivot Points</title>
         <meta name="description" content="">
 
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
@@ -50,9 +50,9 @@
 
         
             
-                <li class=nav-header>Tutorials</li>
+                <li class=nav-header>Imaging Core</li>
             
-            <li data-order=""><a href="/Vascular-Analysis/workflow">Workflow</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/stack">Stack</a></li>
         
     
         
@@ -60,27 +60,37 @@
 
         
             
-                <li class=nav-header>Interface</li>
+                <li class=nav-header>Vascular Interface</li>
             
-            <li data-order=""><a href="/Vascular-Analysis/search">Search</a></li>
+            <li data-order="5"><a href="/Vascular-Analysis/search">Search</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/findpnts">FindPnts</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/pivot-points">Pivot Points</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/editing-slabs">Editing slabs</a></li>
+            <li data-order="4"><a href="/Vascular-Analysis/findpnts">FindPnts</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/For-Zeng-You">For Zeng You</a></li>
+            <li data-order="3"><a href="/Vascular-Analysis/editing-slabs">Editing slabs</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/Tracing-Interface">Tracing interface</a></li>
+            <li data-order="2"><a href="/Vascular-Analysis/vascular-tracing">Vascular tracing</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/stack">Stack</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/point-info">Point Info</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/hyperstack-panel">Hyperstack panel</a></li>
+            <li data-order="1"><a href="/Vascular-Analysis/hyperstack-panel">Hyperstack panel</a></li>
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>Tutorials</li>
+            
+            <li data-order=""><a href="/Vascular-Analysis/workflow">Workflow</a></li>
         
     
         
@@ -123,63 +133,13 @@
 
                     <div id=content class=span10>
                         <div class=page-header>
-    <h3>Tracing interface
+    <h3>Pivot Points
         
     </h3>
 </div>
 
-<p>All three types of object (nodes, edges and slabs) have a similar interface to select, create, move and delete. All objects are placed in x/y and z where z is the currently viewed imaging plane.</p>
+<p>Pivot points allow us to align 3D image stacks from one timepoint to the next.</p>
 
-<h4>Nodes (Nodes are vascular branch points)</h4>
-
-<ul>
-<li>Select: left-click (will turn yellow)<br></li>
-<li>Create: shift+click<br></li>
-<li>Move: select and press keyboard &#39;m&#39;, next click will be new posiiton<br></li>
-<li>Delete: select and press keyboard &#39;Del&#39;<br></li>
-<li>Notes: Use the Point Info window (open with shift+?)<br></li>
-</ul>
-
-<h4>Edges (Edges are vascular tubes that connect one branch point to another)</h4>
-
-<ul>
-<li>Select: left-click a slab within the edge</li>
-<li>Create: Making a new edge is a two step process<br>
-(1) select the source node<br>
-(2) N-click the destination node (a line will be formed between them)<br></li>
-<li>Move: Edges cannot be moved</li>
-<li>Delete: right-click and select &#39;Delete Edge&#39;</li>
-<li>Notes: Use the Point Info window (open with shift+?)</li>
-</ul>
-
-<h4>Slabs (Slabs are the actual tracing along a vascular tube)</h4>
-
-<ul>
-<li>Select: left-click</li>
-<li>Create: S-Click</li>
-<li>Move: select and press keyboard &#39;m&#39;, next click will be new posiiton</li>
-<li>Delete: select and press keyboard &#39;Del&#39;</li>
-<li>Notes: Slabs do not have notes</li>
-</ul>
-
-<blockquote>
-<p>Once a slab is selected you can scroll to the next/previous slab using keyboard left/right.</p>
-</blockquote>
-
-<div></div>
-
-<blockquote>
-<p>It is sometimes hard to select a slab if it is not in the currently viewed imaging plane.
-Scroll the image up or down a bit and try again.</p>
-</blockquote>
-
-<p class="important">
-Important: All objects are placed in x/y and z. Where z is the currently viewed imaging plane.
-</p>
-
-<p class="important">
-When a node, edge, or slab is selected it will be visible in all imaging planes, not just the currently viewed imaging plane.
-</p>
 
 
                     </div>

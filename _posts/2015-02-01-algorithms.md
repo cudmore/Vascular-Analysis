@@ -5,9 +5,9 @@ category: reference
 date: 2015-02-01 22:46:33
 ---
 
-####Stack Alignment
+####Aligning timepoints
 
-The beautiful thing is we do not do alignment in the traditional sense, there is no need to modify your original .tif image files.  
+The beautiful thing is we do not align timepoints in the traditional sense, there is no need to modify your original .tif image files.  
 
 Alignment is done by specifying a 'pivot point' that is common to all timepoints to be aligned.  
 

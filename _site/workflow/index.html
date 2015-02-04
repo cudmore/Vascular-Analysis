@@ -50,9 +50,9 @@
 
         
             
-                <li class=nav-header>Tutorials</li>
+                <li class=nav-header>Imaging Core</li>
             
-            <li data-order=""><a href="/Vascular-Analysis/workflow">Workflow</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/stack">Stack</a></li>
         
     
         
@@ -60,27 +60,37 @@
 
         
             
-                <li class=nav-header>Interface</li>
+                <li class=nav-header>Vascular Interface</li>
             
-            <li data-order=""><a href="/Vascular-Analysis/search">Search</a></li>
+            <li data-order="5"><a href="/Vascular-Analysis/search">Search</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/findpnts">FindPnts</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/pivot-points">Pivot Points</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/editing-slabs">Editing slabs</a></li>
+            <li data-order="4"><a href="/Vascular-Analysis/findpnts">FindPnts</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/For-Zeng-You">For Zeng You</a></li>
+            <li data-order="3"><a href="/Vascular-Analysis/editing-slabs">Editing slabs</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/Tracing-Interface">Tracing interface</a></li>
+            <li data-order="2"><a href="/Vascular-Analysis/vascular-tracing">Vascular tracing</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/stack">Stack</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/point-info">Point Info</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/hyperstack-panel">Hyperstack panel</a></li>
+            <li data-order="1"><a href="/Vascular-Analysis/hyperstack-panel">Hyperstack panel</a></li>
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>Tutorials</li>
+            
+            <li data-order=""><a href="/Vascular-Analysis/workflow">Workflow</a></li>
         
     
         
@@ -128,31 +138,59 @@
     </h3>
 </div>
 
-<h4>(1) make nodes/edges/slabs in one timepoint</h4>
-
-<p>Create a node: shift+click<br>
-Create an edge: select a source done, N+click a destination node<br>
-Create a slab: S-Click  </p>
-
-<p>Once all slabs for an edge are done, review the slabs (and their radii) using left/right arrow keys.  </p>
-
-<p>If marking a subset of edges, only mark edges where you would put more than one slab, e.g. don&#39;t score super short edges.  </p>
-
-<p>If an edge has a pericyte try and get a slab centered on it. If this is not possible, annotate the edge with a note about the pericyte.  </p>
-
-<p>Annotate your images (using node and edge notes) with anything that is out of the ordinary or just cool.  </p>
-
-<h4>(2) make similar nodes/edges/slabs in the next timepoint</h4>
-
-<h4>(3) connect nodes and then edges from one timepoint to the next using FindPnts</h4>
-
-<h4>(4) Quality Control</h4>
+<h4 id="make-nodes-tubes-and-slabs-in-one-timepoint">(1) Make nodes, tubes and slabs in one timepoint</h4>
 
 <ul>
-<li><p>check all slab diameters using search &#39;All Slabs&#39;</p></li>
-<li><p>make edge notes about pericytes</p></li>
-<li><p>In one timepoint, mark edges as diving (d) or surface (s)</p></li>
+  <li>
+    <p>See <a href="/Vascular-Analysis/vascular-tracing/" title="vascular-tracing">Vascular tracing</a> for more information  </p>
+  </li>
+  <li>Create a node at one vascular branch point (shift+click)</li>
+  <li>Create another node at the other end of the same tube (shift+click)</li>
+  <li>Create a tube by selecting the first branch point (source) then N+click the second branch point (destinaiton).</li>
+  <li>Create slabs along the tube with S+click</li>
 </ul>
+
+<h5 id="check-each-slab-diameter-for-each-new-tube">Check each slab diameter for each new tube</h5>
+<ul>
+  <li>Once all slabs for a tube are done, review the slabs (and their radii) using left/right arrow keys. Fix slabs with bad radii using the <a href="/Vascular-Analysis/editing-slabs/" title="editing-slabs">editing slabs</a> interface</li>
+</ul>
+
+<h5 id="keep-in-mind">Keep in mind</h5>
+<ul>
+  <li>If marking a subset of tubes, only mark tubes where you would put more than one slab, e.g. don’t score super short tubes.  </li>
+  <li>If marking a subset of tubes, keep an eye on the depth (image plane) of your tubes. You should only mark tubes that are in and around layer II/III somas. Use keyboard ‘2’ to switch to channel 2, the somas appear as black dots.</li>
+  <li>If a tube has a pericyte, try and get a slab centered on it. If this is not possible, specify ‘has pericyte’ for the edge using the <a href="/Vascular-Analysis/point-info/" title="point-info">Point Info</a> window.  </li>
+  <li>Annotate your images (using node and tube notes) with anything that is out of the ordinary or just cool.  </li>
+</ul>
+
+<h4 id="make-similar-nodes-tubes-and-slabs-in-the-next-timepoint">(2) Make similar nodes, tubes and slabs in the next timepoint</h4>
+<ul>
+  <li>You can open sequential timepoints using the <a href="/Vascular-Analysis/findpnts/" title="findpnts">FindPnts</a> window</li>
+</ul>
+
+<h4 id="connect-nodes-from-one-timepoint-to-the-next-using-findpnts1-window">(3) Connect nodes from one timepoint to the next using <a href="/Vascular-Analysis/findpnts/" title="findpnts">FindPnts</a> window</h4>
+<ul>
+  <li>Open FindPnts for two consecutive timepoints, e.g. timepoint 4 and 5.</li>
+  <li>Selecting a row in the list in findpnts will open two stacks, snap the images to the same region and highlight the selected node (if they are connected).</li>
+  <li>USe keyboard arrow keys in the FindPnts list to scroll through nodes. Keyboard left will flash the programs best guess, Keyboard right will flash the actual connection.</li>
+  <li>Keyboard shift + right-arrow will transfer the guess to the Dst.</li>
+  <li>If the guess is not to your liking, select the nodes you want to connect (in their stack windows), right-click on the desired destination node and select ‘FindPnt -&gt; Dst’ menu. </li>
+</ul>
+
+<h4 id="quality-control">(4) Quality control</h4>
+
+<ul>
+  <li>Check all slab diameters using <a href="/Vascular-Analysis/search/" title="search">search</a> ‘All Slabs’. Scroll through the list of slabs for a timepoint and the slab selected in the list will be selected in the image</li>
+  <li>Mark edges with pericytes using the <a href="/Vascular-Analysis/point-info/" title="point-info">Point Info</a> window</li>
+</ul>
+
+<h4 id="marking-edges-as-diving-andor-surface">(5) Marking edges as diving and/or surface</h4>
+
+<ul>
+  <li>In one timepoint, mark tubes as diving (keyboard ‘d’) or surface (keyboard ‘s’). If a tube is neither, leave this blank.</li>
+  <li>In the same timepoint, mark the branch order of tubes 0..9</li>
+</ul>
+
 
 
                     </div>

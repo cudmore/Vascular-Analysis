@@ -1,7 +1,8 @@
 ---
 layout: page
-title: "Tracing interface"
+title: "Vascular tracing"
 category: interface
+order: 2
 ---
 
 All three types of object (nodes, edges and slabs) have a similar interface to select, create, move and delete. All objects are placed in x/y and z where z is the currently viewed imaging plane.

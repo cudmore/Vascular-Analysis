@@ -50,9 +50,9 @@
 
         
             
-                <li class=nav-header>Tutorials</li>
+                <li class=nav-header>Imaging Core</li>
             
-            <li data-order=""><a href="/Vascular-Analysis/workflow">Workflow</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/stack">Stack</a></li>
         
     
         
@@ -60,27 +60,37 @@
 
         
             
-                <li class=nav-header>Interface</li>
+                <li class=nav-header>Vascular Interface</li>
             
-            <li data-order=""><a href="/Vascular-Analysis/search">Search</a></li>
+            <li data-order="5"><a href="/Vascular-Analysis/search">Search</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/findpnts">FindPnts</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/pivot-points">Pivot Points</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/editing-slabs">Editing slabs</a></li>
+            <li data-order="4"><a href="/Vascular-Analysis/findpnts">FindPnts</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/For-Zeng-You">For Zeng You</a></li>
+            <li data-order="3"><a href="/Vascular-Analysis/editing-slabs">Editing slabs</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/Tracing-Interface">Tracing interface</a></li>
+            <li data-order="2"><a href="/Vascular-Analysis/vascular-tracing">Vascular tracing</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/stack">Stack</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/point-info">Point Info</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/hyperstack-panel">Hyperstack panel</a></li>
+            <li data-order="1"><a href="/Vascular-Analysis/hyperstack-panel">Hyperstack panel</a></li>
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>Tutorials</li>
+            
+            <li data-order=""><a href="/Vascular-Analysis/workflow">Workflow</a></li>
         
     
         
@@ -128,50 +138,129 @@
     </h3>
 </div>
 
-<p><IMG SRC="../images/stack_example_1.jpg" ALIGN="RIGHT" WIDTH="300"></p>
-
-<ul>
-<li>Table of Contents Placeholder
-{:toc}</li>
+<ul id="markdown-toc">
+  <li><a href="#examples">Examples</a></li>
+  <li><a href="#interface">Interface</a></li>
+  <li><a href="#keyboard-commands">Keyboard commands</a></li>
+  <li><a href="#histogram">Histogram</a></li>
+  <li><a href="#navigation-window">Navigation window</a></li>
+  <li><a href="#point-info">Point info</a></li>
+  <li><a href="#notes">Notes</a></li>
 </ul>
 
-<h4>Stack window</h4>
+<p>Each timepoint is a 3D volume (a stack).  </p>
 
-<p>Each timepoint in a hyperstack is a 3D volume (a stack).  </p>
+<h4 id="examples">Examples</h4>
 
-<h4>Open a stack window for a hyperstack and timepoint</h4>
+<figure>
+<img src="../images/imagingcore/stack_example_spines.jpg" width="300" />
+<img src="../images/imagingcore/stack_example_vasculature.jpg" width="300" />
+<figcaption>Two example stacks. Dendritic spines (left) and vascular tubes (right).</figcaption>
+</figure>
 
-<ol>
-<li>select the hyperstack in main <a href="/Vascular-Analysis/hyperstack-panel/">Hyperstack panel</a></li>
-<li>fill in the timepoint</li>
-<li>click &#39;Hyperstack&#39; button</li>
-</ol>
+<figure>
+</figure>
 
-<h4>Interface</h4>
-
+<h4 id="interface">Interface</h4>
 <ul>
-<li>Image contrast is critical, set it with the sliders</li>
-<li>Mouse wheel to scroll up and down through images</li>
+  <li>Mouse wheel to scroll up and down through images</li>
+  <li>Image contrast is critical, set it with the sliders.
+  Open and close contrast bar with keyboard ‘c’</li>
+  <li>View a histogram with keyboard ‘h’</li>
 </ul>
 
-<h4>Keyboard commands</h4>
-<div class="highlight"><pre><code class="language-text" data-lang="text">Arrow keys to pan left/right and up/down in the image  
+<h4 id="keyboard-commands">Keyboard commands</h4>
+<pre><code>Arrow keys to pan left/right and up/down in the image  
 +/- keys to zoom in/out  
 Return/Enter keys to zoom all the way out  
 
-1/2 to switch channels 1/2  
-3/4 to view a sliding maximal z-projection of channels 1/2  
-Esc to cancel any selected nodes/edges/slabs  
+Left mouse button to select objects
+Esc : Cancel selection
 
-shift+? to open the &#39;Point Info&#39; window.  
-    Notes for Edges (E) and Nodes (N) can be viewed and set here.  
-</code></pre></div>
-<h4>Notes</h4>
+1 : view channel 1 
+2 : view channel 2 
+
+3 : view a sliding maximal z-projection of channel 1 
+4 : view a sliding maximal z-projection of channel 2 
+
+c : toggle contrast control bar
+h : open histogram window
+] : toggle between two different window sizes
+
+sift+c : cycle through 4 different window 'candy' displays
+
+shift+p : Set pixel/voxel size
+
+shift+? : open the 'Point Info' window  
+	Object notes can be set in the Point Info window.  
+</code></pre>
+
+<figure>
+<img src="../images/imagingcore/histogram.jpg" align="RIGHT" width="300" />
+</figure>
+
+<h4 id="histogram">Histogram</h4>
 
 <ul>
-<li>Only one timepoint can be viewed at a time.</li>
-<li>Closing a stack window does not remove the stack from memory.</li>
+  <li>Open the histogram window with keyboard ‘h’.</li>
+  <li>The histogram window shows a pixel intensity histogram for one image.</li>
+  <li>Scroll through the image and the histogram for each image will be show.</li>
 </ul>
+
+<p><br />
+<br /></p>
+
+<h4 id="navigation-window">Navigation window</h4>
+
+<figure>
+<img src="../images/imagingcore/stack_navigation.jpg" align="RIGHT" width="300" />
+</figure>
+
+<ul>
+  <li>Right click and select ‘Navigation Window’ menu. A navigation window will be opened and your current zoomed view of the stack will be shown as a blue square.</li>
+  <li>Zoom with +/- or pan with arrow keys and the blue-square tracks what you are looking at.</li>
+  <li>The navigation window is, by default, a maximal z-projection of the entire stack.</li>
+</ul>
+
+<p><br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br /></p>
+
+<h4 id="point-info">Point info</h4>
+
+<p><img src="../images/point_info.jpg" width="250" align="RIGHT" /></p>
+
+<p>The Point Info window shows information about the currently selected object.  </p>
+
+<p>Open the Point Info window from any stack window using shift+?.  </p>
+
+<p>Use the point info window to annotate either nodes or edges with notes.</p>
+
+<p>Use the point info window to annotate edges as ‘diving’, ‘surface’, ‘Has Pericyte’ and ‘Branch Order’.</p>
+
+<h4 id="notes">Notes</h4>
+<ul>
+  <li>Closing a stack window does not remove the stack from memory.</li>
+</ul>
+
 
 
                     </div>

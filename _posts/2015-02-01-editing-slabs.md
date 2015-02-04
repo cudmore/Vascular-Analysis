@@ -3,6 +3,7 @@ layout: page
 title: "Editing slabs"
 category: interface
 date: 2015-02-01 22:46:33
+order: 3
 ---
 
 Each slab has a fit to the tube diameter. It is critical that this fit is correct. Most fits are correct (~90%) but the remaining bad fits need to be edited by hand.  
