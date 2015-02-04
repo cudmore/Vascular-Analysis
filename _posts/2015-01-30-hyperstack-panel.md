@@ -8,7 +8,9 @@ order: 1
 
 Hyperstacks are loaded, saved, and visualized through the Hyperstack panel.
 
+<figure>
 <IMG SRC="../images/hyperstack_panel.png" ALIGN="CENTER" WIDTH="300">
+</figure>
 
 ####Loading a hyperstack
 Press the 'Load' button and select the _T.ibw file corresponding to the hyperstack to be loaded.  
@@ -25,9 +27,15 @@ If the hyperstack to load is a153_hs2 then load the file 'a153_hs2_T.ibw'
 2. fill in the timepoint
 3. click 'Stack' button.
 
+####Opening FindPnts to connect nodes and edges from one timepoint to the next
+- Enter two sequential timepoints in 'Timepoint' and 'TP 2'
+- Click 'Find Points' button
+- See [FindPnt][1]
+
 ####Notes
 - Only one timepoint can be viewed at a time with the 'Stack' button.
 - There is no 'Save As...'
 
 <p class="tip"><strong>Tip:</strong> If you lose the hyperstack panel, it can be reopened with menu Hyperstack -> Hyperstack Panel</p>
 
+[1]: /Vascular-Analysis/findpnts/ "findpnts"
