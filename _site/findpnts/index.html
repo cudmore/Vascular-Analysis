@@ -52,7 +52,10 @@
             
                 <li class=nav-header>Imaging Core</li>
             
-            <li data-order=""><a href="/Vascular-Analysis/stack">Stack</a></li>
+            <li data-order="2"><a href="/Vascular-Analysis/stack-run">Stack Run</a></li>
+        
+            
+            <li data-order="1"><a href="/Vascular-Analysis/stack">Stack</a></li>
         
     
         
@@ -65,7 +68,7 @@
             <li data-order="5"><a href="/Vascular-Analysis/search">Search</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/pivot-points">Pivot Points</a></li>
+            <li data-order="7"><a href="/Vascular-Analysis/pivot-points">Pivot Points</a></li>
         
             
             <li data-order="4"><a href="/Vascular-Analysis/findpnts">FindPnts</a></li>
@@ -77,7 +80,7 @@
             <li data-order="2"><a href="/Vascular-Analysis/vascular-tracing">Vascular tracing</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/point-info">Point Info</a></li>
+            <li data-order="6"><a href="/Vascular-Analysis/point-info">Point Info</a></li>
         
             
             <li data-order="1"><a href="/Vascular-Analysis/hyperstack-panel">Hyperstack panel</a></li>
@@ -146,15 +149,15 @@
 
 <h4 id="nodes">Nodes</h4>
 
-<p>The goal is to fill in the Dst column with the correct nodes, e.g. nodes that map a node in the Src timepoint with a node in the Dst timepoint.</p>
+<p>The goal is to fill in the Dst column with the correct nodes, e.g. a mapping of each node in the Src timepoint with a node in the Dst timepoint.</p>
 
 <p>FindPnts will show you a list of nodes in the first timepoint (Src) with their corresponding connection in the second timepoint (Dst).</p>
 
 <p>When you first open FindPnt there will be no Dst nodes filled in, that is your job.</p>
 
-<p>The guess column is the programs best guess for which nodes are connected.</p>
+<p>The ‘guess’ column is the programs best guess for which nodes are connected. This guess is created using <a href="/Vascular-Analysis/pivot-points/" title="Pivot Points">Pivot Points</a>.</p>
 
-<p>You basically have two choices for each Src node</p>
+<p>You basically have two choices for each Src node:</p>
 
 <ul>
   <li>

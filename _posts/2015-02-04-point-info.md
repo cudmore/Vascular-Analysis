@@ -3,6 +3,7 @@ layout: page
 title: "Point Info"
 category: interface
 date: 2015-01-30 22:46:06
+order: 6
 ---
 
 <IMG SRC="../images/point_info.jpg" WIDTH="250">

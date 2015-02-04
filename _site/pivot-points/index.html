@@ -52,7 +52,10 @@
             
                 <li class=nav-header>Imaging Core</li>
             
-            <li data-order=""><a href="/Vascular-Analysis/stack">Stack</a></li>
+            <li data-order="2"><a href="/Vascular-Analysis/stack-run">Stack Run</a></li>
+        
+            
+            <li data-order="1"><a href="/Vascular-Analysis/stack">Stack</a></li>
         
     
         
@@ -65,7 +68,7 @@
             <li data-order="5"><a href="/Vascular-Analysis/search">Search</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/pivot-points">Pivot Points</a></li>
+            <li data-order="7"><a href="/Vascular-Analysis/pivot-points">Pivot Points</a></li>
         
             
             <li data-order="4"><a href="/Vascular-Analysis/findpnts">FindPnts</a></li>
@@ -77,7 +80,7 @@
             <li data-order="2"><a href="/Vascular-Analysis/vascular-tracing">Vascular tracing</a></li>
         
             
-            <li data-order=""><a href="/Vascular-Analysis/point-info">Point Info</a></li>
+            <li data-order="6"><a href="/Vascular-Analysis/point-info">Point Info</a></li>
         
             
             <li data-order="1"><a href="/Vascular-Analysis/hyperstack-panel">Hyperstack panel</a></li>
@@ -138,7 +141,18 @@
     </h3>
 </div>
 
-<p>Pivot points allow us to align 3D image stacks from one timepoint to the next.</p>
+<p>Pivot points allow 3D image stacks to be aligned from one timepoint to the next.</p>
+
+<p>Any node can be a pivot point. Select the node and press ‘Capture Pivot’.</p>
+
+<p>The pivot point will only align stacks whose nodes are connected (see <a href="/Vascular-Analysis/findpnts/" title="findpnts">FindPnts</a> for how to connect nodes together).</p>
+
+<p>If the guess in FindPnts starts to be wrong, pick a pivot point near the nodes you are working on and the Guess should get better.</p>
+
+<h4 id="see-also">See Also</h4>
+
+<p><a href="/Vascular-Analysis/findpnts/" title="findpnts">FindPnts</a>,
+<a href="/Vascular-Analysis/workflow/" title="workflow">Workflow</a></p>
 
 
 
