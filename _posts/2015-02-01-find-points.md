@@ -15,13 +15,13 @@ Open Find Points for a source and destination timepoint in the main [Hyperstack 
 
 <figure>
 <IMG SRC="../images/findpnts_example.jpg" WIDTH="900">
-<figcaption>FInd Points for nodes with Src node 7 connected to Dst node 8.</figcaption>
+<figcaption>Find Points for nodes with Src node 7 connected to Dst node 8.</figcaption>
 </figure>
 
 
 The goal is to fill in the Dst column with the correct nodes, e.g. a mapping of each node in the Src timepoint with a node in the Dst timepoint.
 
-FInd Points will show you a list of nodes in the first timepoint (Src) with their corresponding connection in the second timepoint (Dst).
+Find Points will show you a list of nodes in the first timepoint (Src) with their corresponding connection in the second timepoint (Dst).
 
 When you first open Find Points there will be no Dst nodes filled in, that is your job.
 
@@ -35,6 +35,13 @@ You basically have two choices for each Src node:
 
 Scrolling through the list will highlight nodes in the Src and Dst at the same time. Once a row is selected, left-arrow will flash the Guess and right-arrow will flash the Dst.
 
+<P class="tip">
+If a node in the second timepoint does not have a match in the first timepoint it is appended to the end of the list. This node can be selected as usual and allows for a reverse lookup.
+</p>
+
+####Put another way
+
+For each source node in the first time point (src) there is a guess telling us the node it potentially matches in the second timepoint (Guess).  The goal here is to fill in the proper connection/correspondence  by filling in the proper destination node (Dst). In most cases, when the guess is correct this is done by simply copying the Guess to the Dst. If the Guess is not correct, the user selects the proper destination node (in the second timepoint) and using a right-click selects ‘Connect Nodes’.
 
 ###Edges
 

@@ -5,7 +5,6 @@ category: post
 date: 2015-01-30 22:01:06
 ---
 
-
 ####How to do some things in [Jekyll][2]
 
 As of Feb 2015 I discovered Jekyll and this has rocked my world. Beautifully done. No more Word-Press for me !!!

@@ -39,7 +39,10 @@ All three types of object (nodes, edges and slabs) have a similar interface to s
 > Scroll the image up or down a bit and try again.
 
 <p class="important">
-Important: All objects are placed in x/y and z. Where z is the currently viewed imaging plane.
+All objects are placed in x/y and z. Where z is the currently viewed imaging plane.
+</p>
+<p class="important">
+Only one edge between any two branch points.
 </p>
 <p class="important">
 When a node, edge, or slab is selected it will be visible in all imaging planes, not just the currently viewed imaging plane.
