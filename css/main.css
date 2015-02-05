@@ -49,10 +49,12 @@ code {
 
 #content > .page-header:first-child {
     margin-top: 0;
+    margin-bottom: 1;
 }
 
 #content > .page-header:first-child h2 {
     margin-top: 0;
+    margin-bottom: 1;
 }
 
 
