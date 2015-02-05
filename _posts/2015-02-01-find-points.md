@@ -8,7 +8,7 @@ order: 4
 
 The Find Points window allows nodes and edges to be connected between two sequential timepoints in a hyperstack.  
 
-Open Find Points for a source and destination timepoint in the main [Hyperstack Panel][1].  
+Open Find Points for a source and destination timepoint from the main [Hyperstack Panel][1] by specifying 'Timepoint' and 'Timepoint 2'.
 
 The Find Points window has a list of nodes in the source timepoint (one row per node) and shows the matching nodes in the second timepoint.
 
