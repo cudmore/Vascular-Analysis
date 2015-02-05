@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>Vascular Analysis : FindPnts</title>
+        <title>Vascular Analysis : Find points</title>
         <meta name="description" content="">
 
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
@@ -68,10 +68,10 @@
             <li data-order="5"><a href="/Vascular-Analysis/search">Search</a></li>
         
             
-            <li data-order="7"><a href="/Vascular-Analysis/pivot-points">Pivot Points</a></li>
+            <li data-order="7"><a href="/Vascular-Analysis/pivot-points">Pivot points</a></li>
         
             
-            <li data-order="4"><a href="/Vascular-Analysis/findpnts">FindPnts</a></li>
+            <li data-order="4"><a href="/Vascular-Analysis/find-points">Find points</a></li>
         
             
             <li data-order="3"><a href="/Vascular-Analysis/editing-slabs">Editing slabs</a></li>
@@ -139,27 +139,27 @@
 
                     <div id=content class=span10>
                         <div class=page-header>
-    <h3>FindPnts
+    <h3>Find points
         
     </h3>
 </div>
 
-<p>FindPnts allows nodes and edges to be connected between sequential timepoints in a hyperstack.  </p>
+<p>The Find Points window allows nodes and edges to be connected between sequential timepoints in a hyperstack.  </p>
 
-<p>Open FindPnts for a source and destination timepoint in the main <a href="/Vascular-Analysis/hyperstack-panel/">Hyperstack Panel</a>.  </p>
+<p>Open Find Points for a source and destination timepoint in the main <a href="/Vascular-Analysis/hyperstack-panel/">Hyperstack Panel</a>.  </p>
 
 <h3 id="nodes">Nodes</h3>
 
 <figure>
 <img src="../images/findpnts_example.jpg" width="900" />
-<figcaption>FindPnts for nodes with Src node 7 connected to Dst node 8.</figcaption>
+<figcaption>FInd Points for nodes with Src node 7 connected to Dst node 8.</figcaption>
 </figure>
 
 <p>The goal is to fill in the Dst column with the correct nodes, e.g. a mapping of each node in the Src timepoint with a node in the Dst timepoint.</p>
 
-<p>FindPnts will show you a list of nodes in the first timepoint (Src) with their corresponding connection in the second timepoint (Dst).</p>
+<p>FInd Points will show you a list of nodes in the first timepoint (Src) with their corresponding connection in the second timepoint (Dst).</p>
 
-<p>When you first open FindPnt there will be no Dst nodes filled in, that is your job.</p>
+<p>When you first open Find Points there will be no Dst nodes filled in, that is your job.</p>
 
 <p>The ‘guess’ column is the programs best guess for which nodes are connected. This guess is created using <a href="/Vascular-Analysis/pivot-points/" title="Pivot Points">Pivot Points</a>.</p>
 
@@ -167,7 +167,7 @@
 
 <ul>
   <li>
-    <p>If you like the Guess, transfer the Guess to the Dst by selecting the row in FindPnts and using keyboard ‘shift + right-arrow’. That is ‘hold shift and hit the right-arrow’.</p>
+    <p>If you like the Guess, transfer the Guess to the Dst by selecting the row in Find Points and using keyboard ‘shift + right-arrow’. That is ‘hold shift and hit the right-arrow’.</p>
   </li>
   <li>
     <p>If the guess is not to your liking, select the source node and the destination node to connect (in their respective image stacks) and right-click on the destination node (still in the image stack) and select menu ‘FindPnt -&gt; Dst’.</p>
@@ -180,10 +180,10 @@
 
 <figure>
 <img src="../images/findpnts_edges.jpg" width="900" />
-<figcaption>FindPnts for edges with Src edge 4 connected to Dst edge 4.</figcaption>
+<figcaption>Find Points for edges with Src edge 4 connected to Dst edge 4.</figcaption>
 </figure>
 
-<p>Expand the FindPnts window with the disclosure triangle (top right of the window) to see a similar list for edges.</p>
+<p>Expand the FInd Points window with the disclosure triangle (top right of the window) to see a similar list for edges.</p>
 
 <p>Edges in red are edges that have a mismatch between their starting and ending nodes.</p>
 

@@ -15,7 +15,7 @@ We want to add some more annotation to each vascular tube. We will be scoring ea
 3. Its branch order off a main diving artery/vein (the actual diving arteries/veins get branch order 0)
 4. Whether or not the tube has a pericyte.
 
-Because your tubes are connected across timepoints using [FindPnts][1] we can annotate tubes in <b>just one timepoint</b> and assuming the tubes don't change (with respect to these annotations) we can generalize these annotations across all timepoints.
+Because your tubes are connected across timepoints using [Find Points][1] we can annotate tubes in <b>just one timepoint</b> and assuming the tubes don't change (with respect to these annotations) we can generalize these annotations across all timepoints.
 
 You want to choose a timepoint for this new tube annotation that is early on and still easy to see. Just don't use the first timepoint.
 
@@ -49,6 +49,6 @@ You can also bring up the [Point Info][2] window (use keyboard shift+?) and set 
 
 - You want to make sure you get all your tubes annotatd. Clicking around on different tubes in the stack window is not that reliable (you might miss a tube). Use the [Search][3] window to generate a list of all tubes and go through each tube one-by-one.
 
-[1]: /Vascular-Analysis/findpnts/
+[1]: /Vascular-Analysis/find-points/
 [2]: /Vascular-Analysis/point-info/
 [3]: /Vascular-Analysis/search/
