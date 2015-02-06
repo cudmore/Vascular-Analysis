@@ -6,17 +6,28 @@ date: 2015-02-01 22:46:33
 order: 4
 ---
 
-The Find Points window allows nodes and edges to be connected between two sequential timepoints in a hyperstack.  
+The Find Points window will display two timepoints simultaneously and provides an interface to manage the connections between both nodes and edges across timepoints.  
 
-Open Find Points for a source and destination timepoint from the main [Hyperstack Panel][1] by specifying 'Timepoint' and 'Timepoint 2'.
-
-The Find Points window has a list of nodes in the source timepoint (one row per node) and shows the matching nodes in the second timepoint.
-
-Click a node row in the find points window and it will open the two timepoints side-by-side.
+Open Find Points from the main [Hyperstack Panel][1] by specifying 'Timepoint' and 'Timepoint 2'. Select a row in Find Points and both the source and destination stacks will be opened.
 
 <P class="important">
 When you first click a node row in the Find Points window, you are opening two image stacks. This will take some time. Let the program finish opening the stacks before you continue interacting with the interface.
 </p>
+
+####Interface
+
+The Find Points window displays a list of nodes in the source timepoint (Src column). For each node in the source timepoint, Find Points shows the corresponding connected node (if there is one) in the second timepoint (Dst column).
+
+The Guess column shows the best guess for the corresponding node in the second timepoint. This guess uses each timepoints [Pivit point][2].
+
+Once a node is selected, the keyboard can be used to scroll through the nodes in the Find Points list and nodes will be selected simultaneously in both the source and destination image stacks.
+
+- Up arrow : Scroll to the previous node
+- Down arrow : Scroll ot the next node
+- Left arrow : Flash the Src node (in first timepoint) and Guess node (in second timepoint).
+- Right arrow : Flash the Src node (in first timepoint) and Dst node (in second timepoint).
+- shift + right-arrow : Transfer the Guess node to Dst node
+- Del : Delete the Dst node (not the node itself, just the correspondence)
 
 ###Nodes
 
@@ -32,23 +43,18 @@ Find Points will show you a list of nodes in the first timepoint (Src) with thei
 
 When you first open Find Points there will be no Dst nodes filled in, that is your job.
 
-The 'guess' column is the programs best guess for which nodes are connected. This guess is created using [Pivot Points][2].
+The 'Guess' column is the programs best guess for which nodes are connected. This guess is created using [Pivot Points][2].
 
-You basically have two choices for each Src node:
+Scroll through each source node and do the following:
 
 - If you like the Guess, transfer the Guess to the Dst by selecting the row in Find Points and using keyboard 'shift + right-arrow'. That is 'hold shift and hit the right-arrow'.
 
 - If the guess is not to your liking, select the source node and the destination node to connect (in their respective image stacks) and right-click on the destination node (still in the image stack) and select menu 'FindPnt -> Dst'.
-
-Scrolling through the list will highlight nodes in the Src and Dst at the same time. Once a row is selected, left-arrow will flash the Guess and right-arrow will flash the Dst.
+- Use 'Del' key to remove a node from the Dst column.
 
 <P class="tip">
-If a node in the second timepoint does not have a match in the first timepoint it is appended to the end of the list. This node can be selected as usual and allows for a reverse lookup.
+If a node in the second timepoint does not have a match in the first timepoint it is appended to the end of the list. This node can be selected as usual and allows for a reverse lookup from the second timepoint to the first.
 </p>
-
-####Put another way
-
-For each source node in the first time point (src) there is a guess telling us the node it potentially matches in the second timepoint (Guess).  The goal here is to fill in the proper connection/correspondence  by filling in the proper destination node (Dst). In most cases, when the guess is correct this is done by simply copying the Guess to the Dst. If the Guess is not correct, the user selects the proper destination node (in the second timepoint) and using a right-click selects ‘Connect Nodes’.
 
 ###Edges
 
