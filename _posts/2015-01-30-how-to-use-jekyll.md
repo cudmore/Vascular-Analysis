@@ -4,6 +4,9 @@ title: "How to use Jekyll"
 category: post
 date: 2015-01-30 22:01:06
 ---
+###with chris
+
+this is markdown
 
 ####How to do some things in [Jekyll][2]
 
