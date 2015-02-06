@@ -41,20 +41,15 @@ The goal is to fill in the Dst column with the correct nodes, e.g. a mapping of 
 
 Find Points will show you a list of nodes in the first timepoint (Src) with their corresponding connection in the second timepoint (Dst).
 
-When you first open Find Points there will be no Dst nodes filled in, that is your job.
-
 The 'Guess' column is the programs best guess for which nodes are connected. This guess is created using [Pivot Points][2].
 
 Scroll through each source node and do the following:
 
-- If you like the Guess, transfer the Guess to the Dst by selecting the row in Find Points and using keyboard 'shift + right-arrow'. That is 'hold shift and hit the right-arrow'.
-
-- If the guess is not to your liking, select the source node and the destination node to connect (in their respective image stacks) and right-click on the destination node (still in the image stack) and select menu 'FindPnt -> Dst'.
+- If the Guess is correct, transfer the Guess to the Dst by selecting the row in Find Points and using keyboard 'shift + right-arrow'. That is 'hold shift and hit the right-arrow'.
+- If the Guess is not current, select the source node and the destination node to connect (in their respective image stacks) and right-click on the destination node (still in the image stack) and select menu 'FindPnt -> Dst'.
 - Use 'Del' key to remove a node from the Dst column.
 
-<P class="tip">
 If a node in the second timepoint does not have a match in the first timepoint it is appended to the end of the list. This node can be selected as usual and allows for a reverse lookup from the second timepoint to the first.
-</p>
 
 ###Edges
 
