@@ -227,6 +227,19 @@ jekyll serve --watch
 <pre><code>http://cudmore.github.io/Vascular-Analysis/
 </code></pre>
 
+<h4 id="convert-markdown-to-pdf">Convert markdown to pdf</h4>
+
+<blockquote>
+  <p>cd /Users/cudmore/Sites/Vascular-Analysis/_posts<br />
+//with TOC<br />
+gimli -y -m -s ../css/main.css -w ‘–toc –footer-right “[page]/[toPage]”’ -o pdf<br />
+//without toc, -w  is passing commands to backend wkhtmltopdf<br />
+gimli -y -m -s ../css/main.css -w ‘–footer-right “[page]/[toPage]”’ -o pdf  </p>
+</blockquote>
+
+<p>gimli -y -m -s ../css/main.css -w ‘–footer-right “[page]/[toPage]”’ -o ../pdf <br />
+gimli -y -m -s ../css/main.css -w ‘–header-left “[webpage]” –header-right “[page]/[toPage]”’ -o ../pdf  </p>
+
 
 
                     </div>
@@ -237,10 +250,13 @@ jekyll serve --watch
 
             <div class=row-fluid>
                 <div id=footer class=span12>
-                     <a href="http://robertcudmore.org/index.html">robertcudmore.org</a>
+                      Copyright &copy; 2015 - Robert Cudmore -
 
+ <a href="http://robertcudmore.org/index.html">robertcudmore.org</a>
+
+<!--
 Documentation for <a href="https://github.com/cudmore/Vascular-Analysis">Vascular Analysis</a>
-
+-->
                 </div>
             </div>
         </div>

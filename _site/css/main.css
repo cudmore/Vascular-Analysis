@@ -72,6 +72,13 @@ code {
     padding-right: 0;
 }
 
+/* i added these */
+#navigation .nav-header2 {
+    padding-top: 30;
+    padding-left: 0;
+    padding-right: 0;
+}
+
 p.important {
     background-color: #fbb;
     position: relative; /* position is the position of the border */

@@ -15,6 +15,7 @@ google_analytics_id: ''
 navigation: 2
 
 # URL to source code, used in _includes/footer.html
+author: 'Robert Cudmore'
 codeurl: 'https://github.com/cudmore/Vascular-Analysis'
 myhomepage: 'http://robertcudmore.org/index.html'
 

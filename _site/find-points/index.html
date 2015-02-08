@@ -145,9 +145,30 @@
     </h3>
 </div>
 
-<p>The Find Points window allows nodes and edges to be connected between sequential timepoints in a hyperstack.  </p>
+<p>The Find Points window will display two timepoints simultaneously and provides an interface to manage the connections between both nodes and edges across timepoints.  </p>
 
-<p>Open Find Points for a source and destination timepoint in the main <a href="/Vascular-Analysis/hyperstack-panel/">Hyperstack Panel</a>.  </p>
+<p>Open Find Points from the main <a href="/Vascular-Analysis/hyperstack-panel/">Hyperstack Panel</a> by specifying ‘Timepoint’ and ‘Timepoint 2’. Select a row in Find Points and both the source and destination stacks will be opened.</p>
+
+<p class="important">
+When you first click a node row in the Find Points window, you are opening two image stacks. This will take some time. Let the program finish opening the stacks before you continue interacting with the interface.
+</p>
+
+<h4 id="interface">Interface</h4>
+
+<p>The Find Points window displays a list of nodes in the source timepoint (Src column). For each node in the source timepoint, Find Points shows the corresponding connected node (if there is one) in the second timepoint (Dst column).</p>
+
+<p>The Guess column shows the best guess for the corresponding node in the second timepoint. This guess uses each timepoints <a href="/Vascular-Analysis/pivot-points/" title="Pivot Points">Pivit point</a>.</p>
+
+<p>Once a node is selected, the keyboard can be used to scroll through the nodes in the Find Points list and nodes will be selected simultaneously in both the source and destination image stacks.</p>
+
+<ul>
+  <li>Up arrow : Scroll to the previous node</li>
+  <li>Down arrow : Scroll ot the next node</li>
+  <li>Left arrow : Flash the Src node (in first timepoint) and Guess node (in second timepoint).</li>
+  <li>Right arrow : Flash the Src node (in first timepoint) and Dst node (in second timepoint).</li>
+  <li>shift + right-arrow : Transfer the Guess node to Dst node</li>
+  <li>Del : Delete the Dst node (not the node itself, just the correspondence)</li>
+</ul>
 
 <h3 id="nodes">Nodes</h3>
 
@@ -160,30 +181,17 @@
 
 <p>Find Points will show you a list of nodes in the first timepoint (Src) with their corresponding connection in the second timepoint (Dst).</p>
 
-<p>When you first open Find Points there will be no Dst nodes filled in, that is your job.</p>
+<p>The ‘Guess’ column is the programs best guess for which nodes are connected. This guess is created using <a href="/Vascular-Analysis/pivot-points/" title="Pivot Points">Pivot Points</a>.</p>
 
-<p>The ‘guess’ column is the programs best guess for which nodes are connected. This guess is created using <a href="/Vascular-Analysis/pivot-points/" title="Pivot Points">Pivot Points</a>.</p>
-
-<p>You basically have two choices for each Src node:</p>
+<p>Scroll through each source node and do the following:</p>
 
 <ul>
-  <li>
-    <p>If you like the Guess, transfer the Guess to the Dst by selecting the row in Find Points and using keyboard ‘shift + right-arrow’. That is ‘hold shift and hit the right-arrow’.</p>
-  </li>
-  <li>
-    <p>If the guess is not to your liking, select the source node and the destination node to connect (in their respective image stacks) and right-click on the destination node (still in the image stack) and select menu ‘FindPnt -&gt; Dst’.</p>
-  </li>
+  <li>If the Guess is correct, transfer the Guess to the Dst by selecting the row in Find Points and using keyboard ‘shift + right-arrow’. That is ‘hold shift and hit the right-arrow’.</li>
+  <li>If the Guess is not current, select the source node and the destination node to connect (in their respective image stacks) and right-click on the destination node (still in the image stack) and select menu ‘FindPnt -&gt; Dst’.</li>
+  <li>Use ‘Del’ key to remove a node from the Dst column.</li>
 </ul>
 
-<p>Scrolling through the list will highlight nodes in the Src and Dst at the same time. Once a row is selected, left-arrow will flash the Guess and right-arrow will flash the Dst.</p>
-
-<p class="tip">
-If a node in the second timepoint does not have a match in the first timepoint it is appended to the end of the list. This node can be selected as usual and allows for a reverse lookup.
-</p>
-
-<h4 id="put-another-way">Put another way</h4>
-
-<p>For each source node in the first time point (src) there is a guess telling us the node it potentially matches in the second timepoint (Guess).  The goal here is to fill in the proper connection/correspondence  by filling in the proper destination node (Dst). In most cases, when the guess is correct this is done by simply copying the Guess to the Dst. If the Guess is not correct, the user selects the proper destination node (in the second timepoint) and using a right-click selects ‘Connect Nodes’.</p>
+<p>If a node in the second timepoint does not have a match in the first timepoint it is appended to the end of the list. This node can be selected as usual and allows for a reverse lookup from the second timepoint to the first.</p>
 
 <h3 id="edges">Edges</h3>
 
@@ -210,10 +218,13 @@ If a node in the second timepoint does not have a match in the first timepoint i
 
             <div class=row-fluid>
                 <div id=footer class=span12>
-                     <a href="http://robertcudmore.org/index.html">robertcudmore.org</a>
+                      Copyright &copy; 2015 - Robert Cudmore -
 
+ <a href="http://robertcudmore.org/index.html">robertcudmore.org</a>
+
+<!--
 Documentation for <a href="https://github.com/cudmore/Vascular-Analysis">Vascular Analysis</a>
-
+-->
                 </div>
             </div>
         </div>

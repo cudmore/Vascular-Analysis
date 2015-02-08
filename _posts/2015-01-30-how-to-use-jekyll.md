@@ -4,9 +4,6 @@ title: "How to use Jekyll"
 category: post
 date: 2015-01-30 22:01:06
 ---
-###with chris
-
-this is markdown
 
 ####How to do some things in [Jekyll][2]
 
@@ -83,6 +80,19 @@ View the site locally with
 View the site on Github
 
     http://cudmore.github.io/Vascular-Analysis/
+
+####Convert markdown to pdf
+
+ > cd /Users/cudmore/Sites/Vascular-Analysis/_posts  
+ > //with TOC  
+ > gimli -y -m -s ../css/main.css -w '--toc --footer-right "[page]/[toPage]"' -o pdf  
+ > //without toc, -w  is passing commands to backend wkhtmltopdf  
+ > gimli -y -m -s ../css/main.css -w '--footer-right "[page]/[toPage]"' -o pdf  
+ 
+
+gimli -y -m -s ../css/main.css -w '--footer-right "[page]/[toPage]"' -o ../pdf   
+gimli -y -m -s ../css/main.css -w '--header-left "[webpage]" --header-right "[page]/[toPage]"' -o ../pdf  
+ 
 
 [1]: http://jekyllrb.com/docs/frontmatter/ "Jekyll Front-Matter"
 [2]: http://jekyllrb.com
