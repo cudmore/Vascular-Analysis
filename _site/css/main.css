@@ -31,6 +31,9 @@ code {
     color: inherit;
 }
 
+/* access with id="header" */
+/* if this was .header1 it would be class="header1" */
+/* if it was p.capital you would use <p class="capital"> */
 #header {
     border-bottom: 1px solid #eee;
     margin-bottom: 2px;
@@ -47,6 +50,7 @@ code {
     text-align: center;
 }
 
+/* see http://www.w3schools.com/css/css_combinators.asp */
 #content > .page-header:first-child {
     margin-top: 0;
     margin-bottom: 1;
@@ -62,6 +66,7 @@ code {
     font-size: 0.9em;
 }
 
+/* this effects all <a> inside <li> */
 #navigation li a {
     padding-left: 10px;
     padding-right: 10px;

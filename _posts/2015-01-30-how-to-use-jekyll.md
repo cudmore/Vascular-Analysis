@@ -7,6 +7,8 @@ date: 2015-01-30 22:01:06
 
 ####How to do some things in [Jekyll][2]
 
+<iframe width="560" height="315" src="http://www.youtube.com/embed/PWf4WUoMXwg" frameborder="0"> </iframe>
+
 As of Feb 2015 I discovered Jekyll and this has rocked my world. Beautifully done. No more Word-Press for me !!!
 
 ####Install on OSX
