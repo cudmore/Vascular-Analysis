@@ -4,7 +4,7 @@ title: "Vascular Image Documentation"
 ---
 
 <figure>
-<IMG SRC="/Vascular-Analysis/images/frontpage_example2.jpg" align="right" width="400">
+<IMG SRC="/Vascular-Analysis/images/frontpage_example2.png" align="right" width="400">
 </figure>
 
 ####Documentation For Vascular Image Analysis
