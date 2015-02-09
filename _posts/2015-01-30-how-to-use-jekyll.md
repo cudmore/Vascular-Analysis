@@ -95,6 +95,9 @@ View the site on Github
 gimli -y -m -s ../css/main.css -w '--footer-right "[page]/[toPage]"' -o ../pdf   
 gimli -y -m -s ../css/main.css -w '--header-left "[webpage]" --header-right "[page]/[toPage]"' -o ../pdf  
  
+####Started using imageoptim-cli
+> http://www.smashingmagazine.com/2013/12/17/imageoptim-cli-batch-compression-tool/
+
 
 [1]: http://jekyllrb.com/docs/frontmatter/ "Jekyll Front-Matter"
 [2]: http://jekyllrb.com
