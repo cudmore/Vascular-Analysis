@@ -94,7 +94,10 @@ View the site on Github
 
 gimli -y -m -s ../css/main.css -w '--footer-right "[page]/[toPage]"' -o ../pdf   
 gimli -y -m -s ../css/main.css -w '--header-left "[webpage]" --header-right "[page]/[toPage]"' -o ../pdf  
- 
+
+####Check page load speed
+> https://developers.google.com/speed/pagespeed/insights/
+
 ####Started using imageoptim-cli
 > http://www.smashingmagazine.com/2013/12/17/imageoptim-cli-batch-compression-tool/
 
