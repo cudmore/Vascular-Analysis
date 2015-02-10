@@ -101,6 +101,13 @@ gimli -y -m -s ../css/main.css -w '--header-left "[webpage]" --header-right "[pa
 ####Started using imageoptim-cli
 > http://www.smashingmagazine.com/2013/12/17/imageoptim-cli-batch-compression-tool/
 
+This doesn't work because jpegmini is not configured properly  
+
+ > imageoptim --jpeg-mini --image-alpha --quit --no-color --directory /Users/cudmore/Sites/Vascular-Analysis/images  
+
+This does work  
+
+ > imageoptim --image-alpha --quit --no-color --directory /Users/cudmore/Sites/Vascular-Analysis/images
 
 [1]: http://jekyllrb.com/docs/frontmatter/ "Jekyll Front-Matter"
 [2]: http://jekyllrb.com

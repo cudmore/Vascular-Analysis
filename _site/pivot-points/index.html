@@ -147,11 +147,15 @@
 
 <p>Pivot points allow 3D image stacks to be aligned from one timepoint to the next.</p>
 
-<p>Any node can be a pivot point. Select the node and press ‘Capture Pivot’.</p>
+<p>Any node can be a pivot point. In an image stack, select a node and press ‘Capture Pivot’ button.</p>
 
-<p>The pivot point will only align stacks whose nodes are connected (see <a href="/Vascular-Analysis/find-points/" title="find-points">Find Points</a> for how to connect nodes together).</p>
+<p>When a node is selected as a pivot point for one timepoint, any other nodes connected to that node (with Find Point) will become the pivot point for that timepoint.</p>
 
-<p>If the guess in FInd Points starts to be wrong, pick a pivot point near the nodes you are working on and the Guess should get better.</p>
+<p>If each itmepoint has  aPivot Point then we have a ‘reference frame’ by which to align the image stacks between timepoints.</p>
+
+<p>If the ‘Guess’ in <a href="/Vascular-Analysis/find-points/" title="find-points">Find Points</a> starts to be wrong or does not show up at all, assign a node as a pivot point near the nodes you are working on and the ‘Guess’ should get better.</p>
+
+<p>Pivot points appear in image <a href="/Vascular-Analysis/stack/" title="stack">stacks</a> as a blue circle. Pivot points appear as blue cells in <a href="/Vascular-Analysis/find-points/" title="find-points">Find Points</a>.</p>
 
 <h4 id="put-another-way">Put another way</h4>
 

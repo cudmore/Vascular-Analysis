@@ -151,6 +151,8 @@
 <img src="../images/hyperstack_panel.png" align="CENTER" width="300" />
 </figure>
 
+<p class="tip"><strong>Tip:</strong> If you lose the hyperstack panel, it can be reopened with menu Hyperstack -&gt; Hyperstack Panel</p>
+
 <h4 id="loading-a-hyperstack">Loading a hyperstack</h4>
 <p>Press the ‘Load’ button and select the _T.ibw file corresponding to the hyperstack to be loaded.  </p>
 
@@ -163,6 +165,10 @@
   <li>The hyperstack is saved in the same hard-drive folder it was opened from.</li>
 </ul>
 
+<p class="important"><strong>important:</strong>
+There is no 'Save As...'
+</p>
+
 <h4 id="opening-a-stack1-window-for-a-single-timepoint">Opening a <a href="/Vascular-Analysis/find-points/" title="find-points">stack</a> window for a single timepoint</h4>
 <ol>
   <li>select a hyperstack in the list</li>
@@ -170,20 +176,65 @@
   <li>click ‘Stack’ button.</li>
 </ol>
 
+<p class="important"><strong>important:</strong>
+Only one timepoint can be viewed at a time with the 'Stack' button. To view another timepoint, close the current timepoints stack window and open another timepoint.
+</p>
+
 <h4 id="opening-find-points1-to-connect-nodes-and-edges-from-one-timepoint-to-the-next">Opening <a href="/Vascular-Analysis/find-points/" title="find-points">Find Points</a> to connect nodes and edges from one timepoint to the next</h4>
 <ul>
-  <li>Enter two sequential timepoints in ‘Timepoint’ and ‘TP 2’</li>
+  <li>Enter two sequential timepoints in ‘Timepoint’ and ‘Timepoint 2’</li>
   <li>Click ‘Find Points’ button</li>
-  <li>See <a href="/Vascular-Analysis/find-points/" title="find-points">FInd Points</a></li>
+  <li>See <a href="/Vascular-Analysis/find-points/" title="find-points">Find Points</a></li>
 </ul>
 
-<h4 id="notes">Notes</h4>
+<h4 id="search3"><a href="/Vascular-Analysis/search/" title="search">Search</a></h4>
+
+<p>Open a panel to search nodes, tubes and slabs</p>
+
+<h4 id="unload-stacks">Unload stacks</h4>
+
 <ul>
-  <li>Only one timepoint can be viewed at a time with the ‘Stack’ button.</li>
-  <li>There is no ‘Save As…’</li>
+  <li>Unload raw data from selected hyperstack.</li>
 </ul>
 
-<p class="tip"><strong>Tip:</strong> If you lose the hyperstack panel, it can be reopened with menu Hyperstack -&gt; Hyperstack Panel</p>
+<p class="important"><strong>Important:</strong>
+Image stacks take up memory. If too many are loaded, Igor will run out of memory. To prevent this, unload unused stack images with 'Unload Stack'. The next time a stack is to be displayed it will automatically be loaded again.
+</p>
+
+<h4 id="list">List</h4>
+
+<p>Open a List panel to display a list of all timepoints in a hyperstack</p>
+
+<h4 id="hyperstack-database-hs-db">Hyperstack database (HS DB)</h4>
+
+<p>Open a panel to display a database of all hyperstacks in a hard-drive folder</p>
+
+<figure>
+<img src="../images/hyperstackdb.png" align="CENTER" width="600" />
+</figure>
+
+<p>In the Hyperstack DB panel, ‘set’ a hard-drive folder and press the ‘Build’ button to generate a list of all hyperstacks in the selected hard-drive folder.</p>
+
+<p>Double-click on a hyperstack in the list and it will load into the main Hyperstack panel.</p>
+
+<p>There are two ways of generating the list</p>
+
+<ul>
+  <li>Check ‘Folder of hyperstack folder’ expects a folder which itself contains hyperstack folders. This normally corresponds to a user folder such as ‘cudmore’ or ‘jahnavi’.</li>
+  <li>Do not check ‘Folder of hyperstack folder’ expects a folder of user folders.</li>
+</ul>
+
+<p>The list of hyperstacks has the following information</p>
+
+<ul>
+  <li>hs : Name of hyperstack</li>
+  <li>userFolder : The user folder the hyperstack is in (if using ‘Folder of users’)</li>
+  <li>tp : Number of timepoints</li>
+  <li>startDate : The first date in the hyperstack</li>
+  <li>stopDate : The last date in the hyperstack</li>
+  <li>days : The number of days in the hyperstack (number of days between start and stop)</li>
+  <li>months : The number of months in the hyperstack (stop date - start date)</li>
+</ul>
 
 
 
