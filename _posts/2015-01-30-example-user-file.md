@@ -5,6 +5,18 @@ category: post
 date: 2015-01-30 22:01:06
 ---
 
+####Specify setting in Igor command window
+
+Set 2 default window widths. Switch between them with keyboard ']'. Values specify the width of the stack window in screen pixels.
+
+> root:bStack:gStackWindowWidth1 = 350
+> root:bStack:gStackWindowWidth2 = 767.5
+
+####Making a userf file
+- Make a .txt file in /bHyperstack_Defaults/Users/
+- Load the file from ithin Igor using menu 'Hyperstack -> Hyperstack - Load User File'
+
+####Example user.txt file
 
 	root:bNV:gUserName="Micek"
 	
