@@ -34,7 +34,7 @@ sections: [
 baseurl: '/Vascular-Analysis'
 
 # To provide a link to .pdf for each post
-pdfurl: '/Vascular-Analysis/pdf'
+#pdfurl: '/Vascular-Analysis/_siteprint'
 
 # Dates are not included in permalinks
 #permalink: none

@@ -3,13 +3,11 @@ layout: default
 title: "Vascular Image Documentation"
 ---
 
-<figure>
-<IMG SRC="/Vascular-Analysis/images/frontpage_example2.png" align="right" width="400">
-</figure>
+###Documentation For Vascular Image Analysis
 
-####Documentation For Vascular Image Analysis
+<IMG class="img-float-right" SRC="/Vascular-Analysis/images/frontpage_example2.png" width="400">
 
-This website is documentation for software that analyzes and annotates timeseries of 3D image stacks.  
+This website is documentation for software that analyzes and annotates <BR> timeseries of 3D image stacks.  
 
 - In vivo
 - Three dimensional

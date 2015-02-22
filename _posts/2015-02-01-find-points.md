@@ -65,6 +65,7 @@ If a node in the second timepoint does not have a match in the first timepoint i
 
 While you are editing the connections between nodes using Find points you can always add new nodes, edges and slabs as you find nodes in one timepoint that need to be created in the other.
 
+<div class="print-page-break"></div>
 
 ###Edges
 

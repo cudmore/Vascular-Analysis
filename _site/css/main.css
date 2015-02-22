@@ -13,8 +13,12 @@ H4 {
     font-size: 1.2em;
     margin-top: 18px;
     margin-bottom: 6px;
-    clear: both; //make sure all h4 start on their own line (moves past prev. image)
 	page-break-after:avoid;
+    //clear: both; //make sure all h4 start on their own line (moves past prev. image)
+}
+
+.print-page-break {
+  clear: both; //start on a new line (moves past prev. image)
 }
 
 pre, code {
@@ -175,26 +179,17 @@ p.tip {
 	page-break-after:avoid
 }
 
-<div class="page-break"></div>
-
-.pdf-page
-{
-	page-break-inside: avoid;
-	page-break-before:avoid
-	page-break-after:avoid
-}
-
-.pdf-print
-{
-	display: none !important;
-}
-
-@media print
-{
-    .no-screen, .no-screen *
-    {
-        //display: none !important;
-    }
+@media print {
+  a[href]:after {
+    content: none !important;
+  }
+  #navigation {
+    /* HOLY SHIT, THIS TURNS OFF NAVIGATION DURING PRINTING !!!! */
+    display: none !important;
+  }
+  .no-screen, .no-screen * {
+    /* display: none !important; */
+  }
 }
 
 @media screen
