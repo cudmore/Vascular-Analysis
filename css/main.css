@@ -177,6 +177,18 @@ p.tip {
 
 <div class="page-break"></div>
 
+.pdf-page
+{
+	page-break-inside: avoid;
+	page-break-before:avoid
+	page-break-after:avoid
+}
+
+.pdf-print
+{
+	display: none !important;
+}
+
 @media print
 {
     .no-screen, .no-screen *
@@ -189,6 +201,6 @@ p.tip {
 {    
     .no-screen, .no-screen *
     {
-        display: none !important;
+        //display: none !important;
     }
 }
