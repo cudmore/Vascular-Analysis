@@ -18,11 +18,12 @@ Open Find Points from the main [Hyperstack Panel][1] by specifying 'Timepoint' a
 <B>Important: </B> When you first click a row in the Find Points window, you are opening two image stacks. This will take some time. Let the program finish opening the stacks before you continue interacting with the interface.
 </p>
 
-<figure>
-<IMG SRC="../images/findpoints_nodes.png" WIDTH="283" ALIGN="RIGHT">
-</figure>
 
 ####Interface
+
+<figure>
+<IMG class="img-float-right" SRC="../images/findpoints_nodes.png" WIDTH="283">
+</figure>
 
 On the right is an example Find points window with Src node 23 connected to Dst node 4.
 
@@ -64,11 +65,12 @@ If a node in the second timepoint does not have a match in the first timepoint i
 
 While you are editing the connections between nodes using Find points you can always add new nodes, edges and slabs as you find nodes in one timepoint that need to be created in the other.
 
-<figure>
-<IMG SRC="../images/findpoints_edges.png" WIDTH="600" ALIGN="RIGHT">
-</figure>
 
 ###Edges
+
+<figure>
+<IMG class="img-float-right" SRC="../images/findpoints_edges.png" WIDTH="600">
+</figure>
 
 Expand the Find Points window with the disclosure triangle (top right of the window) to display a list of edges. The navigation in this list of edges is similar to that of nodes.
 

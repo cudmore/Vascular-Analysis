@@ -13,8 +13,9 @@ H4 {
     font-size: 1.2em;
     margin-top: 18px;
     margin-bottom: 6px;
+    clear: both; //make sure all h4 start on their own line (moves past prev. image)
+	page-break-after:avoid;
 }
-
 
 pre, code {
     border: none;
@@ -126,4 +127,68 @@ p.tip {
     padding-top: 5px;
     padding-right: 15px;
     padding-bottom: 5px;
+}
+
+// for tag cloud and archives
+.tag-cloud {
+  list-style: none;
+  padding: 0;
+  text-align: justify; 
+  font-size: 16px;
+  li {
+    display: inline-block;
+    margin: 0 12px 12px 0; 
+  }
+}
+#archives {
+  padding: 5px;
+}
+.archive-group {
+  margin: 5px;
+  border-top: 1px solid #ddd;
+}
+.archive-item {
+  margin-left: 5px;
+}
+.post-tags {
+  font-size: 0.8rem;
+  //text-align: right;
+}
+
+
+.img-float-left {
+    float: left;
+    margin-left: 6px;
+    margin-top: 6px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+	page-break-inside: avoid;
+}
+.img-float-right {
+    float: right;
+    margin-left: 6px;
+    margin-top: 6px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+	page-break-inside: avoid;
+	page-break-before:avoid
+	page-break-after:avoid
+}
+
+<div class="page-break"></div>
+
+@media print
+{
+    .no-screen, .no-screen *
+    {
+        //display: none !important;
+    }
+}
+
+@media screen
+{    
+    .no-screen, .no-screen *
+    {
+        display: none !important;
+    }
 }

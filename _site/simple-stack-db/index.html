@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width">
 
-        <title>Vascular Analysis : Workflow</title>
+        <title>Vascular Analysis : Simple stack database</title>
         <meta name="description" content="">
 
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
@@ -40,7 +40,7 @@
             
                 <li class=nav-header>Getting Started</li>
             
-            <li data-order="3"><a href="/Vascular-Analysis/opening-and-closing">Opening and closing</a></li>
+            <li data-order="2"><a href="/Vascular-Analysis/opening-and-closing">Opening and closing</a></li>
         
             
             <li data-order="1"><a href="/Vascular-Analysis/installation">Installation</a></li>
@@ -92,9 +92,9 @@
 
         
             
-                <li class=nav-header>Tutorials</li>
+                <li class=nav-header>Workflows</li>
             
-            <li data-order=""><a href="/Vascular-Analysis/workflow">Workflow</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/vasular-workflow">Vascular workflow</a></li>
         
     
         
@@ -120,6 +120,9 @@
             
                 <li class=nav-header>Blog Posts</li>
             
+            <li data-order="5"><a href="/Vascular-Analysis/simple-stack-db">Simple stack database</a></li>
+        
+            
             <li data-order="2"><a href="/Vascular-Analysis/scoring-tubes">Scoring tubes</a></li>
         
             
@@ -140,65 +143,99 @@
 
                     <div id=content class=span10>
                         <div class=page-header>
-    <h3>Workflow
+    <h3>Simple stack database
         
     </h3>
 </div>
 
-<h4 id="make-nodes-tubes-and-slabs-in-one-timepoint">(1) Make nodes, tubes and slabs in one timepoint</h4>
+<h2 id="introduction">Introduction</h2>
+
+<p>This document describes one of the most simple workflows.</p>
 
 <ul>
+  <li>Open and initialize bStack</li>
+  <li>Open a .tif stack</li>
+  <li>Add 3D annotations</li>
+  <li>Save the database</li>
+</ul>
+
+<h2 id="open-and-initialize-bstack">Open and initialize bStack</h2>
+
+<ul>
+  <li>Open bStack.ipf in Igor (double-click the desktop icon).</li>
+  <li>Initialize bStack using menu ‘bStack -&gt; Load User’ and select ‘yunju_branch_points.txt’<br />
+  This will open the Stack Browser window</li>
+</ul>
+
+<h2 id="load-some-stacks">Load some stacks</h2>
+<ul>
+  <li>Either<br />
+  Drag and drop a .tif stack onto the Stack Browser.</li>
+  <li>Or<br />
+  Load a directory of .tif files using the ‘Load Generic Directory’ button.</li>
+</ul>
+
+<p>Once a stack is displayed in the Stack Browser, double-click on a stack in the list to open a <a href="/Vascular-Analysis/stack/">Stack</a> window.</p>
+
+<h4 id="add-3d-annotations">Add 3D annotations</h4>
+<p>A stack can be annotated with 3D points, we call this a ‘stack db’. Each stack db can be saved and reloaded later.</p>
+
+<ul>
+  <li>Open the stack db interface with keyboard ‘[’</li>
+  <li>Add a new 3D point with shift+click</li>
+  <li>Save 3D annotations using ‘Save’ button</li>
   <li>
-    <p>See <a href="/Vascular-Analysis/vascular-tracing/" title="vascular-tracing">Vascular tracing</a> for more information  </p>
+    <p>Load previously saved annotations with ‘Load’ button</p>
   </li>
-  <li>Create a node at one vascular branch point (shift+click)</li>
-  <li>Create another node at the other end of the same tube (shift+click)</li>
-  <li>Create a tube by selecting the first branch point (source) then N+click the second branch point (destinaiton).</li>
-  <li>Create slabs along the tube with S+click</li>
+  <li>
+    <p>Delete a point by selecting the point (mouse left-click) and hitting keyboard ‘Delete’ or ‘Backspace’</p>
+  </li>
+  <li>Each point can have a textual note, select the point and fill in a note in the field below the list of points.</li>
 </ul>
 
-<h5 id="check-each-slab-diameter-for-each-new-tube">Check each slab diameter for each new tube</h5>
-<ul>
-  <li>Once all slabs for a tube are done, review the slabs (and their radii) using left/right arrow keys. Fix slabs with bad radii using the <a href="/Vascular-Analysis/editing-slabs/" title="editing-slabs">editing slabs</a> interface</li>
-</ul>
+<h4 id="search">Search</h4>
+<p>The search panel allows a stack db to be searched and will generate a list of points.</p>
 
-<h5 id="keep-in-mind">Keep in mind</h5>
-<ul>
-  <li>If marking a subset of tubes, only mark tubes where you would put more than one slab, e.g. don’t score super short tubes.  </li>
-  <li>If marking a subset of tubes, keep an eye on the depth (image plane) of your tubes. You should only mark tubes that are in and around layer II/III somas. Use keyboard ‘2’ to switch to channel 2, the somas appear as black dots.</li>
-  <li>If a tube has a pericyte, try and get a slab centered on it. If this is not possible, specify ‘has pericyte’ for the edge using the <a href="/Vascular-Analysis/point-info/" title="point-info">Point Info</a> window.  </li>
-  <li>Annotate your images (using node and tube notes) with anything that is out of the ordinary or just cool.  </li>
-</ul>
+<p>Open the search panel with the ‘Search’ button.</p>
 
-<h4 id="make-similar-nodes-tubes-and-slabs-in-the-next-timepoint">(2) Make similar nodes, tubes and slabs in the next timepoint</h4>
-<ul>
-  <li>You can open sequential timepoints using the <a href="/Vascular-Analysis/find-points/" title="find-points">Find Points</a> window</li>
-</ul>
-
-<h4 id="connect-nodes-from-one-timepoint-to-the-next-using-find-points1-window">(3) Connect nodes from one timepoint to the next using <a href="/Vascular-Analysis/find-points/" title="find-points">Find Points</a> window</h4>
-<ul>
-  <li>Open FInd Points for two consecutive timepoints, e.g. timepoint 4 and 5.</li>
-  <li>Selecting a row in the list in Find Points will open two stacks, snap the images to the same region and highlight the selected node (if they are connected).</li>
-  <li>Use keyboard arrow keys in the Find Points list to scroll through nodes. Keyboard left will flash the programs best guess, Keyboard right will flash the actual connection.</li>
-  <li>Keyboard shift + right-arrow will transfer the Guess to the Dst.</li>
-  <li>If the guess is not to your liking, select the nodes you want to connect (in their stack windows), right-click on the desired destination node and select ‘FindPnt -&gt; Dst’ menu. </li>
-</ul>
-
-<h4 id="quality-control">(4) Quality control</h4>
+<p>Different types of searches  </p>
 
 <ul>
-  <li>Check all slab diameters using <a href="/Vascular-Analysis/search/" title="search">search</a> ‘All Slabs’. Scroll through the list of slabs for a timepoint and the slab selected in the list will be selected in the image</li>
+  <li>All : Generate a list of all stack db points  </li>
+  <li>Notes : Generate a list of stack db points with notes  </li>
+  <li>Close : Search for points that have other points that are close</li>
 </ul>
 
-<h4 id="marking-tubes-as-diving-surface-has-pericyte-and-marking-branch-order">(5) Marking tubes as diving, surface, has pericyte and marking branch order</h4>
+<p>Once a search is performed, the search panel will display a list of results. Each row in the list is a point. Single-click on a point in the list and it will be selected in the main stack window.</p>
+
+<p>If you zoom the stack window (keyboard +) you can snap to different points while maintaining the zoom using the ‘snap’ checkbox.</p>
+
+<h4 id="important-concepts">Important concepts</h4>
 
 <ul>
-  <li>See <a href="/Vascular-Analysis/scoring-tubes/" title="scoring-tubes">Scoring tubes</a> for more information.</li>
-  <li>In one timepoint, mark all tubes as diving (keyboard ‘d’) or surface (keyboard ‘s’). If a tube is neither, leave this blank.</li>
-  <li>In the same timepoint, mark the branch order of each tubes 0..9. If you can’t determine the branch-order of a tube, leave it blank.</li>
-  <li>Mark tubes with pericytes (keyboard ‘p’)</li>
+  <li>After a stack db is saved, it will automatically be loaded the next time bStack is run and the stack db interface is opened with keyboard ‘[’</li>
+  <li>You are responsible for saving your stack db with the ‘Save’ button<br />
+  If you do not save and you quit Igor, the stack db WILL NOT BE SAVED</li>
 </ul>
 
+
+
+<div class="post-tags">
+  
+    
+  
+  
+  
+  
+  
+
+   <!--
+   <BR>
+   <a href="/Vascular-Analysis/pdf_posts/2015-02-21-simple-stack-db.pdf">print pdf</a>
+   <BR>
+   -->
+    
+</div>
 
 
                     </div>

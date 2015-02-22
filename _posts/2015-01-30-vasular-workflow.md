@@ -1,7 +1,7 @@
 ---
 layout: page
-title: "Workflow"
-category: tutorials
+title: "Vascular workflow"
+category: workflow
 date: 2015-01-30 21:56:18
 ---
 

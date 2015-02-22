@@ -3,7 +3,10 @@ layout: page
 title: "Opening and closing"
 category: gettingstarted
 date: 2015-01-30 22:38:12
-order: 3
+order: 2
+tags:
+- jekyll
+
 ---
 
 This vascular analysis runs inside of [Igor Pro][1].  

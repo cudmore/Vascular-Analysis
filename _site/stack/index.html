@@ -40,7 +40,7 @@
             
                 <li class=nav-header>Getting Started</li>
             
-            <li data-order="3"><a href="/Vascular-Analysis/opening-and-closing">Opening and closing</a></li>
+            <li data-order="2"><a href="/Vascular-Analysis/opening-and-closing">Opening and closing</a></li>
         
             
             <li data-order="1"><a href="/Vascular-Analysis/installation">Installation</a></li>
@@ -92,9 +92,9 @@
 
         
             
-                <li class=nav-header>Tutorials</li>
+                <li class=nav-header>Workflows</li>
             
-            <li data-order=""><a href="/Vascular-Analysis/workflow">Workflow</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/vasular-workflow">Vascular workflow</a></li>
         
     
         
@@ -119,6 +119,9 @@
         
             
                 <li class=nav-header>Blog Posts</li>
+            
+            <li data-order="5"><a href="/Vascular-Analysis/simple-stack-db">Simple stack database</a></li>
+        
             
             <li data-order="2"><a href="/Vascular-Analysis/scoring-tubes">Scoring tubes</a></li>
         
@@ -145,44 +148,38 @@
     </h3>
 </div>
 
+<div class="no-screen">
+<h3>Stack</h3>
+</div>
+
 <ul id="markdown-toc">
-  <li><a href="#examples">Examples</a></li>
-  <li><a href="#interface">Interface</a></li>
+  <li><a href="#overview">Overview</a></li>
   <li><a href="#keyboard-commands">Keyboard commands</a></li>
+  <li><a href="#contrast-bar">Contrast bar</a></li>
   <li><a href="#histogram">Histogram</a></li>
   <li><a href="#navigation-window">Navigation window</a></li>
   <li><a href="#point-info">Point info</a></li>
-  <li><a href="#notes">Notes</a></li>
+  <li><a href="#important">Important</a></li>
 </ul>
 
-<p>Each timepoint is a 3D volume (a stack).  </p>
+<p><img class="img-float-left" src="../images/imagingcore/stack_example_spines.jpg" width="300" />
+<img class="img-float-left" src="../images/imagingcore/stack_example_vasculature.jpg" width="300" /></p>
 
-<h4 id="examples">Examples</h4>
-
-<figure>
-<img src="../images/imagingcore/stack_example_spines.jpg" width="300" />
-<img src="../images/imagingcore/stack_example_vasculature.jpg" width="300" />
-<figcaption>Two example stacks. Dendritic spines (left) and vascular tubes (right).</figcaption>
-</figure>
-
-<figure>
-</figure>
-
-<h4 id="interface">Interface</h4>
+<h4 id="overview">Overview</h4>
 <ul>
-  <li>Mouse wheel to scroll up and down through images</li>
-  <li>Image contrast is critical, set it with the sliders.
-  Oen and close contrast bar with keyboard ‘c’</li>
+  <li>Mouse wheel to scroll up and down through images, arrow keys to pan, +/- to zoom</li>
+  <li>Image contrast is critical, open contrast bar with keyboard ‘c’, adjust min/max contrast with sliders.</li>
   <li>View a histogram with keyboard ‘h’</li>
+  <li>Closing a stack window does not remove it from memory (the stack remains open)</li>
 </ul>
 
 <h4 id="keyboard-commands">Keyboard commands</h4>
-<pre><code>Arrow keys to pan left/right and up/down in the image  
-+/- keys to zoom in/out  
-Return/Enter keys to zoom all the way out  
+<pre><code>Arrow keys : pan image left/right and up/down  
++ : zoom in (follows mouse pointer) 
+- : zoom out (follows mouse pointer) 
+Return/Enter : view entire image  
 
-Left mouse button to select objects
-Esc : Cancel selection
+Esc : cancel selection
 
 1 : view channel 1 
 2 : view channel 2 
@@ -202,26 +199,30 @@ shift+? : open the 'Point Info' window
 	Object notes can be set in the Point Info window.  
 </code></pre>
 
-<figure>
-<img src="../images/imagingcore/histogram.jpg" align="RIGHT" width="300" />
-</figure>
+<h4 id="contrast-bar">Contrast bar</h4>
+<ul>
+  <li>Open the contrast bar with keyboard ‘c’</li>
+  <li>Pixel intensity values below ‘min’ will be displayed as black</li>
+  <li>Pixel intensity values above ‘max’ will be displayed as white</li>
+</ul>
 
 <h4 id="histogram">Histogram</h4>
+
+<p><img class="img-float-right" src="../images/imagingcore/histogram.jpg" width="300" /></p>
+
+<p>The histogram window show a histogram of pixel intensity values for each image in a stack.</p>
 
 <ul>
   <li>Open the histogram window with keyboard ‘h’.</li>
   <li>The histogram window shows a pixel intensity histogram for one image.</li>
-  <li>Scroll through the image and the histogram for each image will be show.</li>
+  <li>Scroll through the image in a stack (mouse-wheel) and the histogram for each image will be show.</li>
 </ul>
-
-<p><br />
-<br /></p>
 
 <h4 id="navigation-window">Navigation window</h4>
 
-<figure>
-<img src="../images/imagingcore/stack_navigation.jpg" align="RIGHT" width="300" />
-</figure>
+<p><img class="img-float-right" src="../images/imagingcore/stack_navigation.jpg" width="300" /></p>
+
+<p>The navigation window opens a new window with a maximal z-projection of the stack and shows the current zoomed view as a blue square.</p>
 
 <ul>
   <li>Right click and select ‘Navigation Window’ menu. A navigation window will be opened and your current zoomed view of the stack will be shown as a blue square.</li>
@@ -229,45 +230,47 @@ shift+? : open the 'Point Info' window
   <li>The navigation window is, by default, a maximal z-projection of the entire stack.</li>
 </ul>
 
-<p><br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br /></p>
-
 <h4 id="point-info">Point info</h4>
 
-<p><img src="../images/point_info.jpg" width="250" align="RIGHT" /></p>
+<p><img class="img-float-right" src="../images/point_info.jpg" width="250" /></p>
 
 <p>The Point Info window shows information about the currently selected object.  </p>
 
-<p>Open the Point Info window from any stack window using shift+?.  </p>
-
-<p>Use the point info window to annotate either nodes or edges with notes.</p>
-
-<p>Use the point info window to annotate edges as ‘diving’, ‘surface’, ‘Has Pericyte’ and ‘Branch Order’.</p>
-
-<h4 id="notes">Notes</h4>
 <ul>
-  <li>Closing a stack window does not remove the stack from memory.</li>
+  <li>Open the Point Info window from any stack window using shift+?.  </li>
+  <li>Use the point info window to annotate either nodes or edges with notes.</li>
+  <li>Use the point info window to annotate edges as ‘diving’, ‘surface’, ‘Has Pericyte’ and ‘Branch Order’.</li>
 </ul>
 
+<h4 id="important">Important</h4>
+<ul>
+  <li>Contrast is critical, if not set properly you will not see objects in your image that are actually there.</li>
+  <li>Closing a stack window does not remove the stack from memory.</li>
+  <li>Zooming with keyboard +/- follows the mouse pointer</li>
+</ul>
+
+
+
+<div class="post-tags">
+  
+    
+  
+  
+  
+    <b>Tags:</b>  
+  
+  
+  
+    <a href="/Vascular-Analysis/tags/#Imaging core">Imaging core</a>
+  
+
+   <!--
+   <BR>
+   <a href="/Vascular-Analysis/pdf_posts/2015-01-30-stack.pdf">print pdf</a>
+   <BR>
+   -->
+    
+</div>
 
 
                     </div>

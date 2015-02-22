@@ -40,7 +40,7 @@
             
                 <li class=nav-header>Getting Started</li>
             
-            <li data-order="3"><a href="/Vascular-Analysis/opening-and-closing">Opening and closing</a></li>
+            <li data-order="2"><a href="/Vascular-Analysis/opening-and-closing">Opening and closing</a></li>
         
             
             <li data-order="1"><a href="/Vascular-Analysis/installation">Installation</a></li>
@@ -92,9 +92,9 @@
 
         
             
-                <li class=nav-header>Tutorials</li>
+                <li class=nav-header>Workflows</li>
             
-            <li data-order=""><a href="/Vascular-Analysis/workflow">Workflow</a></li>
+            <li data-order=""><a href="/Vascular-Analysis/vasular-workflow">Vascular workflow</a></li>
         
     
         
@@ -119,6 +119,9 @@
         
             
                 <li class=nav-header>Blog Posts</li>
+            
+            <li data-order="5"><a href="/Vascular-Analysis/simple-stack-db">Simple stack database</a></li>
+        
             
             <li data-order="2"><a href="/Vascular-Analysis/scoring-tubes">Scoring tubes</a></li>
         
@@ -146,8 +149,6 @@
 </div>
 
 <h4 id="how-to-do-some-things-in-jekyll2">How to do some things in <a href="http://jekyllrb.com">Jekyll</a></h4>
-
-<iframe width="560" height="315" src="http://www.youtube.com/embed/PWf4WUoMXwg" frameborder="0"> </iframe>
 
 <p>As of Feb 2015 I discovered Jekyll and this has rocked my world. Beautifully done. No more Word-Press for me !!!</p>
 
@@ -229,6 +230,15 @@ jekyll serve --watch
 <pre><code>http://cudmore.github.io/Vascular-Analysis/
 </code></pre>
 
+<h4 id="embed-video">Embed video</h4>
+
+<pre><code>&lt;iframe width="560" height="315" src="http://youtu.be/cZJt4ow4q8Q" frameborder="0"&gt; &lt;/iframe&gt;
+</code></pre>
+
+<iframe width="560" height="315" src="http://youtu.be/cZJt4ow4q8Q" frameborder="0"> </iframe>
+
+<iframe src="http://youtu.be/cZJt4ow4q8Q" frameborder="0"> </iframe>
+
 <h4 id="convert-markdown-to-pdf">Convert markdown to pdf</h4>
 
 <blockquote>
@@ -241,6 +251,12 @@ gimli -y -m -s ../css/main.css -w ‘–footer-right “[page]/[toPage]”’ -o
 
 <p>gimli -y -m -s ../css/main.css -w ‘–footer-right “[page]/[toPage]”’ -o ../pdf <br />
 gimli -y -m -s ../css/main.css -w ‘–header-left “[webpage]” –header-right “[page]/[toPage]”’ -o ../pdf  </p>
+
+<p>gimli -y -f ./2015-02-21-simple-stack-db.md -s ../css/main.css -w ‘–page-size “letter” –footer-right “[page]/[toPage]”’ -o ../pdf/</p>
+
+<p>-y to remove yaml<br />
+-f to specify a file
+-s to specify a .css file</p>
 
 <h4 id="check-page-load-speed">Check page load speed</h4>
 <blockquote>
@@ -264,6 +280,74 @@ gimli -y -m -s ../css/main.css -w ‘–header-left “[webpage]” –header-ri
   <p>imageoptim –image-alpha –quit –no-color –directory /Users/cudmore/Sites/Vascular-Analysis/images</p>
 </blockquote>
 
+<h4 id="adding-a-tag-cloud">Adding a tag cloud</h4>
+
+<p>This worked  </p>
+
+<blockquote>
+  <p>http://blog.meinside.pe.kr/Adding-tag-cloud-and-archives-page-to-Jekyll/</p>
+</blockquote>
+
+<p>And is inspied on this:  </p>
+
+<blockquote>
+  <p>http://kalapun.com/posts/liquid-tag-management-for-jekyll/</p>
+</blockquote>
+
+<ol>
+  <li>make and fill in tags.html in /Vascular-Analysis/</li>
+  <li>create and fill in _includes/post-tags.html</li>
+  <li>include it in this file _layouts/post.html with  </li>
+</ol>
+
+<blockquote>
+  <p>{.% include post-tags.html .%}<br />
+remove the .’s</p>
+</blockquote>
+
+<ol>
+  <li>edit and add to styles.css</li>
+  <li>include some tags in each post with  </li>
+</ol>
+
+<blockquote>
+  <hr />
+  <p>layout: post<br />
+  title: This is an example.<br />
+  tags:<br />
+  - jekyll<br />
+  - example<br />
+  published: true<br />
+  —  </p>
+</blockquote>
+
+<p>Now get rid of all this in /Vascular-Analysis/, it is redundant with the left TOC.<br />
+And add it to /blog/. Then rewrite post-tags.html as i like and include it in a sidebar like i did in post.html</p>
+
+
+
+<div class="post-tags">
+  
+    
+  
+  
+  
+    <b>Tags:</b>  
+  
+  
+  
+    <a href="/Vascular-Analysis/tags/#jekyll">jekyll</a>,
+  
+    <a href="/Vascular-Analysis/tags/#example">example</a>
+  
+
+   <!--
+   <BR>
+   <a href="/Vascular-Analysis/pdf_posts/2015-01-30-how-to-use-jekyll.pdf">print pdf</a>
+   <BR>
+   -->
+    
+</div>
 
 
                     </div>

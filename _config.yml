@@ -24,7 +24,7 @@ sections: [
     ['gettingstarted', 'Getting Started'],
     ['imagingcore', 'Imaging Core'],
     ['interface', 'Vascular Interface'],
-    ['tutorials', 'Tutorials'],
+    ['workflow', 'Workflows'],
     ['reference', 'Reference'],
     ['post', 'Blog Posts']
 ]
@@ -32,6 +32,9 @@ sections: [
 # Keep as an empty string if served up at the root. If served up at a specific
 # path (e.g. on GitHub pages) leave off the trailing slash, e.g. /my-project
 baseurl: '/Vascular-Analysis'
+
+# To provide a link to .pdf for each post
+pdfurl: '/Vascular-Analysis/pdf'
 
 # Dates are not included in permalinks
 #permalink: none

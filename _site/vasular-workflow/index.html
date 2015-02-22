@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width">
+
+        <title>Vascular Analysis : Vascular workflow</title>
+        <meta name="description" content="">
+
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/Vascular-Analysis/css/syntax.css">
+        <link rel="stylesheet" href="/Vascular-Analysis/css/main.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class=row-fluid>
+                <div id=header class=span12>
+                    <h4><a class=brand href="/Vascular-Analysis/">Vascular Analysis</a>
+    <small></small>
+</h4>
+
+
+                </div>
+            </div>
+
+            <div class=row-fluid>
+                
+                
+                    <div id=navigation class=span2>
+                        <ul class="nav nav-list">
+    <!-- <li><a href="/Vascular-Analysis/">Home</a></li> -->
+    <BR>
+    
+        
+        
+
+        
+            
+                <li class=nav-header>Getting Started</li>
+            
+            <li data-order="2"><a href="/Vascular-Analysis/opening-and-closing">Opening and closing</a></li>
+        
+            
+            <li data-order="1"><a href="/Vascular-Analysis/installation">Installation</a></li>
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>Imaging Core</li>
+            
+            <li data-order="2"><a href="/Vascular-Analysis/stack-run">Stack run</a></li>
+        
+            
+            <li data-order="1"><a href="/Vascular-Analysis/stack">Stack</a></li>
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>Vascular Interface</li>
+            
+            <li data-order="5"><a href="/Vascular-Analysis/search">Search</a></li>
+        
+            
+            <li data-order="7"><a href="/Vascular-Analysis/pivot-points">Pivot points</a></li>
+        
+            
+            <li data-order="4"><a href="/Vascular-Analysis/find-points">Find points</a></li>
+        
+            
+            <li data-order="3"><a href="/Vascular-Analysis/editing-slabs">Editing slabs</a></li>
+        
+            
+            <li data-order="2"><a href="/Vascular-Analysis/vascular-tracing">Vascular tracing</a></li>
+        
+            
+            <li data-order="6"><a href="/Vascular-Analysis/point-info">Point info</a></li>
+        
+            
+            <li data-order="1"><a href="/Vascular-Analysis/hyperstack-panel">Hyperstack panel</a></li>
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>Workflows</li>
+            
+            <li data-order=""><a href="/Vascular-Analysis/vasular-workflow">Vascular workflow</a></li>
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>Reference</li>
+            
+            <li data-order=""><a href="/Vascular-Analysis/algorithms">Algorithms</a></li>
+        
+            
+            <li data-order=""><a href="/Vascular-Analysis/gotchas">Gotchas</a></li>
+        
+            
+            <li data-order=""><a href="/Vascular-Analysis/faq">FAQ</a></li>
+        
+    
+        
+        
+
+        
+            
+                <li class=nav-header>Blog Posts</li>
+            
+            <li data-order="5"><a href="/Vascular-Analysis/simple-stack-db">Simple stack database</a></li>
+        
+            
+            <li data-order="2"><a href="/Vascular-Analysis/scoring-tubes">Scoring tubes</a></li>
+        
+            
+            <li data-order=""><a href="/Vascular-Analysis/how-to-use-jekyll">How to use Jekyll</a></li>
+        
+            
+            <li data-order=""><a href="/Vascular-Analysis/example-user-file">example user file</a></li>
+        
+            
+            <li data-order=""><a href="/Vascular-Analysis/change-log">change log</a></li>
+        
+    
+<!-- List additional links. It is recommended to add a divider
+    e.g. <li class=divider></li> first to break up the content. -->
+</ul>
+
+                    </div>
+
+                    <div id=content class=span10>
+                        <div class=page-header>
+    <h3>Vascular workflow
+        
+    </h3>
+</div>
+
+<h4 id="make-nodes-tubes-and-slabs-in-one-timepoint">(1) Make nodes, tubes and slabs in one timepoint</h4>
+
+<ul>
+  <li>
+    <p>See <a href="/Vascular-Analysis/vascular-tracing/" title="vascular-tracing">Vascular tracing</a> for more information  </p>
+  </li>
+  <li>Create a node at one vascular branch point (shift+click)</li>
+  <li>Create another node at the other end of the same tube (shift+click)</li>
+  <li>Create a tube by selecting the first branch point (source) then N+click the second branch point (destinaiton).</li>
+  <li>Create slabs along the tube with S+click</li>
+</ul>
+
+<h5 id="check-each-slab-diameter-for-each-new-tube">Check each slab diameter for each new tube</h5>
+<ul>
+  <li>Once all slabs for a tube are done, review the slabs (and their radii) using left/right arrow keys. Fix slabs with bad radii using the <a href="/Vascular-Analysis/editing-slabs/" title="editing-slabs">editing slabs</a> interface</li>
+</ul>
+
+<h5 id="keep-in-mind">Keep in mind</h5>
+<ul>
+  <li>If marking a subset of tubes, only mark tubes where you would put more than one slab, e.g. don’t score super short tubes.  </li>
+  <li>If marking a subset of tubes, keep an eye on the depth (image plane) of your tubes. You should only mark tubes that are in and around layer II/III somas. Use keyboard ‘2’ to switch to channel 2, the somas appear as black dots.</li>
+  <li>If a tube has a pericyte, try and get a slab centered on it. If this is not possible, specify ‘has pericyte’ for the edge using the <a href="/Vascular-Analysis/point-info/" title="point-info">Point Info</a> window.  </li>
+  <li>Annotate your images (using node and tube notes) with anything that is out of the ordinary or just cool.  </li>
+</ul>
+
+<h4 id="make-similar-nodes-tubes-and-slabs-in-the-next-timepoint">(2) Make similar nodes, tubes and slabs in the next timepoint</h4>
+<ul>
+  <li>You can open sequential timepoints using the <a href="/Vascular-Analysis/find-points/" title="find-points">Find Points</a> window</li>
+</ul>
+
+<h4 id="connect-nodes-from-one-timepoint-to-the-next-using-find-points1-window">(3) Connect nodes from one timepoint to the next using <a href="/Vascular-Analysis/find-points/" title="find-points">Find Points</a> window</h4>
+<ul>
+  <li>Open FInd Points for two consecutive timepoints, e.g. timepoint 4 and 5.</li>
+  <li>Selecting a row in the list in Find Points will open two stacks, snap the images to the same region and highlight the selected node (if they are connected).</li>
+  <li>Use keyboard arrow keys in the Find Points list to scroll through nodes. Keyboard left will flash the programs best guess, Keyboard right will flash the actual connection.</li>
+  <li>Keyboard shift + right-arrow will transfer the Guess to the Dst.</li>
+  <li>If the guess is not to your liking, select the nodes you want to connect (in their stack windows), right-click on the desired destination node and select ‘FindPnt -&gt; Dst’ menu. </li>
+</ul>
+
+<h4 id="quality-control">(4) Quality control</h4>
+
+<ul>
+  <li>Check all slab diameters using <a href="/Vascular-Analysis/search/" title="search">search</a> ‘All Slabs’. Scroll through the list of slabs for a timepoint and the slab selected in the list will be selected in the image</li>
+</ul>
+
+<h4 id="marking-tubes-as-diving-surface-has-pericyte-and-marking-branch-order">(5) Marking tubes as diving, surface, has pericyte and marking branch order</h4>
+
+<ul>
+  <li>See <a href="/Vascular-Analysis/scoring-tubes/" title="scoring-tubes">Scoring tubes</a> for more information.</li>
+  <li>In one timepoint, mark all tubes as diving (keyboard ‘d’) or surface (keyboard ‘s’). If a tube is neither, leave this blank.</li>
+  <li>In the same timepoint, mark the branch order of each tubes 0..9. If you can’t determine the branch-order of a tube, leave it blank.</li>
+  <li>Mark tubes with pericytes (keyboard ‘p’)</li>
+</ul>
+
+
+
+<div class="post-tags">
+  
+    
+  
+  
+  
+  
+  
+
+   <!--
+   <BR>
+   <a href="/Vascular-Analysis/pdf_posts/2015-01-30-vasular-workflow.pdf">print pdf</a>
+   <BR>
+   -->
+    
+</div>
+
+
+                    </div>
+                
+            </div>
+
+            
+
+            <div class=row-fluid>
+                <div id=footer class=span12>
+                      Copyright &copy; 2015 - Robert Cudmore -
+
+ <a href="http://robertcudmore.org/index.html">robertcudmore.org</a>
+
+<!--
+Documentation for <a href="https://github.com/cudmore/Vascular-Analysis">Vascular Analysis</a>
+-->
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function orderNav() {
+                var list,
+                    section,
+                    header,
+                    sections = [],
+                    lists = {},
+                    headers = {};
+
+                var navUl = document.querySelectorAll('#navigation ul')[0],
+                    navLis = document.querySelectorAll('#navigation ul li');
+
+                if (!navUl) return;
+
+                for (var i = 0; i < navLis.length; i++) {
+                    var order, li = navLis[i];
+
+                    if (li.classList.contains('nav-header')) {
+                        section = li.textContent || li.innerText;
+                        sections.push(section);
+                        headers[section] = li;
+                        continue;
+                    }
+
+                    if (!lists[section]) {
+                        lists[section] = [];
+                    }
+
+                    order = parseFloat(li.getAttribute('data-order'))
+                    lists[section].push([order, li]);
+                }
+
+                for (var i = 0; i < sections.length; i++) {
+                    section = sections[i];
+                    list = lists[section].sort(function(a, b) {
+                        return a[0] - b[0];
+                    });
+
+                    if (header = headers[section]) {
+                        navUl.appendChild(header);
+                    }
+                    for (var j = 0; j < list.length; j++) {
+                        navUl.appendChild(list[j][1]);
+                    }
+                }
+            }
+
+            if (document.querySelectorAll) orderNav();
+        </script>
+        
+    </body>
+</html>
