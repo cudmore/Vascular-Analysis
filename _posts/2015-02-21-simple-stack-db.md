@@ -108,7 +108,7 @@ Selecting a point in the list will select the point in the stack window and vica
 
 ####Search
 
-<IMG class="img-float-right" SRC="../images/imagingcore/stack_db_search.png" WIDTH="600">
+<IMG class="img-float-right" SRC="../images/imagingcore/stack_db_search.png" WIDTH="500">
 
 The search panel will search a stack db and return a list of points. Once generated, clicking on a point in the search results will display the point in the main stack window.
 
