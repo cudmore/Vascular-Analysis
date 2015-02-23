@@ -48,24 +48,6 @@ Each stack can have a list of 3D annotations, we call this a stack database (sta
 
 ###Details
 
-####Displaying a grid
-
-A grid can be overlaid over the images in the main stack window. You can toggle a grid on and off and set the grid size in the stack db options panel. Open the stack db options panel with the 'Options' button in the stack db toolbar.
-
-####Search
-
-The search panel allows a stack db to be searched and will generate a list of points. Open the search panel with the 'Search' button in the stack db toolbar.
-
-Different types of searches  
-
-- All : Generate a list of all stack db points.
-- Notes : Generate a list of stack db points with notes.  
-- Close : Search for points that have other points that are close.
-
-Once a search is performed, the search panel will display a list of results. Each row in the list is a point in the stack db. Single-click on a point in the list and it will be selected in the main stack window.
-
-If you zoom the stack window (keyboard +) you can snap to different points while maintaining the zoom using the 'snap' checkbox.
-
 ####Stack scale
 
 Set the X/Y/Z stack scale in the main stack window with keyboard 'shift+p'.
@@ -83,9 +65,6 @@ It is very easy to export the 3D coordinates of the points in a stack DB.
 - Option 2: When you save a stack db you are saving all the points in a single text file. The file can be found in a folder named 'stackdb' in the hard-drive folder of your original stack.
 
 
-<div class="page-break"></div>
-
-
 ####Stack DB toolbar
 
 <IMG class="img-float-right" SRC="../images/imagingcore/stack_db.png" WIDTH="600">
@@ -101,27 +80,42 @@ Selecting a line segment in the list will select the same line segment in the st
 Selecting a point in the list will select the point in the stack window and vica-versa.
 
 
-<div class="page-break"> </div>
-
 
 <div class="print-page-break"></div>
 
-####Search
+####Search panel
 
 <IMG class="img-float-right" SRC="../images/imagingcore/stack_db_search.png" WIDTH="500">
 
+Open the Search panel from the stack db toolbar using the 'Options' button.
+
 The search panel will search a stack db and return a list of points. Once generated, clicking on a point in the search results will display the point in the main stack window.
 
-<B>Important:</b> The search results are a static output report. Once a search is performed, if a point in the main stack window is modified (add, delete, move) the search results will not be automatically updated. If the points are modified in the main stack window and you want to use the search results, regenerate the search.
+Different types of searches are performed with buttons:  
 
-<div class="page-break"></div>
+- All : Generate a list of all stack db points.
+- Notes : Generate a list of stack db points with notes.  
+- Close : Search for points that have other points that are close.
+
+Once a search is performed, the search panel will display a list of results. Each row in the list of results is a point in the stack db. Single-click on a point in the list and it will be selected in the main stack window.
+
+If you zoom the stack window (keyboard +) you can snap to different points while maintaining the zoom using the search panel 'Snap' checkbox.
+
+The search results are a static output report. Once a search is performed, if points in the main stack window are modified (add, delete, move) the search results will not be automatically updated. If the points are modified in the main stack window and you want to use the search results, regenerate the search.
+
+
 <div class="print-page-break"></div>
 
-####Options
+####Options panel
 
 <IMG class="img-float-right" SRC="../images/imagingcore/stack_db_options.png" WIDTH="300">
 
-Turn the grid on and off with the 'Grid spacing' checkbox. Don't worry about the rest.
+Open the Options panel from the stack db toolbar using the 'Options' button.
+
+<b>Grid Spacing (um)</b>: Toggles a grid on and off in the main stack window. When the grid is turned on/off or the scale is set, the main stack window is not automatically updated. Close and re-open the main stack window to refresh the grid.
+
+<div class="print-page-break"></div>
+
 
 [1]: /Vascular-Analysis/stack/
 [2]: http://www.robertcudmore.org/maptracker/v2/stack-browser/
