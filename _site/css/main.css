@@ -178,6 +178,12 @@ p.tip {
 	page-break-before:avoid
 	page-break-after:avoid
 }
+.img-center {
+    margin-left: 6px;
+    margin-top: 6px;
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
 
 @media print {
   a[href]:after {
@@ -189,6 +195,20 @@ p.tip {
   }
   .no-screen, .no-screen * {
     /* display: none !important; */
+  }
+  .no-print, .noprint * {
+    display: none !important;
+    content: none !important;
+  }
+  .post-tags {
+    display: none !important;
+    content: none !important;
+  }
+  .page-break {
+    page-break-after: always;
+  }
+  h1, h2, h3, h4 {
+    page-break-after:avoid;
   }
 }
 

@@ -17,10 +17,18 @@
         <div class="container">
             <div class=row-fluid>
                 <div id=header class=span12>
-                    <h4><a class=brand href="/Vascular-Analysis/">Vascular Analysis</a>
+                    <div class=no-print>
+<h4><a class=brand href="/Vascular-Analysis/">Vascular Analysis</a>
     <small></small>
 </h4>
 
+<!--
+<div float=right>
+<a href="javascript:window.print()" float=right>print</a>
+</div>
+-->
+
+</div>
 
                 </div>
             </div>
@@ -94,7 +102,10 @@
             
                 <li class=nav-header>Workflows</li>
             
-            <li data-order=""><a href="/Vascular-Analysis/vasular-workflow">Vascular workflow</a></li>
+            <li data-order="2"><a href="/Vascular-Analysis/simple-stack-db">Simple stack database</a></li>
+        
+            
+            <li data-order="1"><a href="/Vascular-Analysis/vasular-workflow">Vascular workflow</a></li>
         
     
         
@@ -119,9 +130,6 @@
         
             
                 <li class=nav-header>Blog Posts</li>
-            
-            <li data-order="5"><a href="/Vascular-Analysis/simple-stack-db">Simple stack database</a></li>
-        
             
             <li data-order="2"><a href="/Vascular-Analysis/scoring-tubes">Scoring tubes</a></li>
         
@@ -148,26 +156,20 @@
     </h3>
 </div>
 
-<h2 id="introduction">Introduction</h2>
+<h3 id="workflow">Workflow</h3>
 
-<p>This document describes one of the most simple workflows.</p>
+<p>This documents describes a very simple workflow for annotating 3D points in a stack.</p>
 
-<ul>
-  <li>Open and initialize bStack</li>
-  <li>Open a .tif stack</li>
-  <li>Add 3D annotations</li>
-  <li>Save the database</li>
-</ul>
-
-<h2 id="open-and-initialize-bstack">Open and initialize bStack</h2>
+<h4 id="open-and-initialize-bstack">1. Open and initialize bStack</h4>
 
 <ul>
-  <li>Open bStack.ipf in Igor (double-click the desktop icon).</li>
-  <li>Initialize bStack using menu ‘bStack -&gt; Load User’ and select ‘yunju_branch_points.txt’<br />
-  This will open the Stack Browser window</li>
+  <li>Open bStack.ipf in Igor Pro (double-click the bStack desktop icon).</li>
+  <li>Click in the Igor Pro command window to compile (the command window is titled ‘Untitled’).</li>
+  <li><b>Important:</b> Initialize bStack using menu ‘bStack -&gt; Load User’ and select <b>‘yunju_branch_points.txt’</b><br />
+  This will open the <a href="http://www.robertcudmore.org/maptracker/v2/stack-browser/">Stack Browser</a> window</li>
 </ul>
 
-<h2 id="load-some-stacks">Load some stacks</h2>
+<h4 id="load-a-stack">2. Load a stack</h4>
 <ul>
   <li>Either<br />
   Drag and drop a .tif stack onto the Stack Browser.</li>
@@ -175,48 +177,108 @@
   Load a directory of .tif files using the ‘Load Generic Directory’ button.</li>
 </ul>
 
-<p>Once a stack is displayed in the Stack Browser, double-click on a stack in the list to open a <a href="/Vascular-Analysis/stack/">Stack</a> window.</p>
+<p>Once a stack is loaded in the <a href="http://www.robertcudmore.org/maptracker/v2/stack-browser/">Stack Browser</a>, double-click on its entry to display the stack in a <a href="/Vascular-Analysis/stack/">Stack</a> window.</p>
 
-<h4 id="add-3d-annotations">Add 3D annotations</h4>
-<p>A stack can be annotated with 3D points, we call this a ‘stack db’. Each stack db can be saved and reloaded later.</p>
+<p class="important">You need to set the proper X/Y/Z stack scale with keyboard 'shift+p'. If you make stack db points with the wrong scale, you need to come find Bob.</p>
+
+<h4 id="add-3d-annotations">3. Add 3D annotations</h4>
+
+<p>Each stack can have a list of 3D annotations, we call this a stack database (stack db).</p>
 
 <ul>
-  <li>Open the stack db interface with keyboard ‘[’</li>
-  <li>Add a new 3D point with shift+click</li>
-  <li>Save 3D annotations using ‘Save’ button</li>
-  <li>
-    <p>Load previously saved annotations with ‘Load’ button</p>
-  </li>
-  <li>
-    <p>Delete a point by selecting the point (mouse left-click) and hitting keyboard ‘Delete’ or ‘Backspace’</p>
-  </li>
+  <li>In a <a href="/Vascular-Analysis/stack/">stack</a> window, open the stack db toolbar with keyboard ‘[’.</li>
+  <li>Add a new 3D point with shift+click.</li>
+  <li>Delete a point by selecting the point (mouse left-click) and hitting keyboard ‘Delete’ or ‘Backspace’.</li>
   <li>Each point can have a textual note, select the point and fill in a note in the field below the list of points.</li>
 </ul>
 
-<h4 id="search">Search</h4>
-<p>The search panel allows a stack db to be searched and will generate a list of points.</p>
+<h4 id="save-your-work">4. Save your work</h4>
 
-<p>Open the search panel with the ‘Search’ button.</p>
+<ul>
+  <li>Save a stack db using the ‘Save’ button.</li>
+  <li>Load a previously saved stack db with the ‘Load’ button.</li>
+  <li><b>Important:</b> You are responsible for saving your stack db. Use the ‘Save’ button.</li>
+</ul>
+
+<h3 id="details">Details</h3>
+
+<h4 id="displaying-a-grid">Displaying a grid</h4>
+
+<p>A grid can be overlaid over the images in the main stack window. You can toggle a grid on and off and set the grid size in the stack db options panel. Open the stack db options panel with the ‘Options’ button in the stack db toolbar.</p>
+
+<h4 id="search">Search</h4>
+
+<p>The search panel allows a stack db to be searched and will generate a list of points. Open the search panel with the ‘Search’ button in the stack db toolbar.</p>
 
 <p>Different types of searches  </p>
 
 <ul>
-  <li>All : Generate a list of all stack db points  </li>
-  <li>Notes : Generate a list of stack db points with notes  </li>
-  <li>Close : Search for points that have other points that are close</li>
+  <li>All : Generate a list of all stack db points.</li>
+  <li>Notes : Generate a list of stack db points with notes.  </li>
+  <li>Close : Search for points that have other points that are close.</li>
 </ul>
 
-<p>Once a search is performed, the search panel will display a list of results. Each row in the list is a point. Single-click on a point in the list and it will be selected in the main stack window.</p>
+<p>Once a search is performed, the search panel will display a list of results. Each row in the list is a point in the stack db. Single-click on a point in the list and it will be selected in the main stack window.</p>
 
 <p>If you zoom the stack window (keyboard +) you can snap to different points while maintaining the zoom using the ‘snap’ checkbox.</p>
 
-<h4 id="important-concepts">Important concepts</h4>
+<h4 id="stack-scale">Stack scale</h4>
+
+<p>Set the X/Y/Z stack scale in the main stack window with keyboard ‘shift+p’.</p>
+
+<p>Please set the proper scale before you make any stack db points.</p>
+
+<p>If you create stack db points and later need to change the scale <b>you need to come see Bob</b>.</p>
+
+<h4 id="exporting-data">Exporting data</h4>
+
+<p>It is very easy to export the 3D coordinates of the points in a stack DB.</p>
 
 <ul>
-  <li>After a stack db is saved, it will automatically be loaded the next time bStack is run and the stack db interface is opened with keyboard ‘[’</li>
-  <li>You are responsible for saving your stack db with the ‘Save’ button<br />
-  If you do not save and you quit Igor, the stack db WILL NOT BE SAVED</li>
+  <li>
+    <p>Option 1: In the stack db toolbar of the main stack window, click on the list of points and then press keyboard ‘e’. This will open a text table of all points in the stack db, you can copy and paste it into your favorite analysis program.</p>
+  </li>
+  <li>
+    <p>Option 2: When you save a stack db you are saving all the points in a single text file. The file can be found in a folder named ‘stackdb’ in the hard-drive folder of your original stack.</p>
+  </li>
 </ul>
+
+<div class="page-break"></div>
+
+<h4 id="stack-db-toolbar">Stack DB toolbar</h4>
+
+<p><img class="img-float-right" src="../images/imagingcore/stack_db.png" width="600" /></p>
+
+<p>The stack db toolbar displays a list of line segments and a list of points. Open and close the stack db toolbar with keyboard ‘[’.</p>
+
+<h5 id="line-segments">Line Segments</h5>
+
+<p>Selecting a line segment in the list will select the same line segment in the stack window and vica-vera.</p>
+
+<h5 id="points">Points</h5>
+
+<p>Selecting a point in the list will select the point in the stack window and vica-versa.</p>
+
+<div class="page-break"> </div>
+
+<div class="print-page-break"></div>
+
+<h4 id="search-1">Search</h4>
+
+<p><img class="img-float-right" src="../images/imagingcore/stack_db_search.png" width="600" /></p>
+
+<p>The search panel will search a stack db and return a list of points. Once generated, clicking on a point in the search results will display the point in the main stack window.</p>
+
+<p><b>Important:</b> The search results are a static output report. Once a search is performed, if a point in the main stack window is modified (add, delete, move) the search results will not be automatically updated. If the points are modified in the main stack window and you want to use the search results, regenerate the search.</p>
+
+<div class="page-break"></div>
+<div class="print-page-break"></div>
+
+<h4 id="options">Options</h4>
+
+<p><img class="img-float-right" src="../images/imagingcore/stack_db_options.png" width="300" /></p>
+
+<p>Turn the grid on and off with the ‘Grid spacing’ checkbox. Don’t worry about the rest.</p>
 
 
 
@@ -226,10 +288,19 @@
   
   
   
+    <b>Tags:</b>  
   
+  
+  
+    <a href="/Vascular-Analysis/tags/#Imaging core">Imaging core</a>,
+  
+    <a href="/Vascular-Analysis/tags/#Workflow">Workflow</a>
   
 
-   
+   <!--
+   <a href="javascript:window.print()">print</a>
+    -->
+
    <!--
    <BR>
    <a href="_posts/2015-02-21-simple-stack-db.pdf">print pdf</a>
