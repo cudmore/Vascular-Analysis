@@ -51,7 +51,6 @@ tags:
 http://linuxtv.org/wiki/index.php/Stk1160#Making_it_Work
 
 ####Here is the code
-```
 
 	#/usr/bin/python
 
@@ -107,5 +106,4 @@ http://linuxtv.org/wiki/index.php/Stk1160#Making_it_Work
 	# Release camera
 	cap.release()
 
-```
 
