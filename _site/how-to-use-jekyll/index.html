@@ -167,7 +167,7 @@
 </blockquote>
 
 <h4 id="making-posts-and-pages">Making posts and pages</h4>
-<p>To make a blog post, the blog-post.md file needs to start with this yaml <a href="http://jekyllrb.com/docs/frontmatter/" title="Jekyll Front-Matter">front matter</a>  </p>
+<p>To make a blog post, the blog-post.md file needs to start with this yaml <a href="http://jekyllrb.com/docs/frontmatter/" title="Jekyll Front-Matter">front matter</a></p>
 
 <pre><code>---
 layout: page
@@ -177,7 +177,7 @@ date: 2015-01-30 22:01:06
 ---
 </code></pre>
 
-<p>To make a new page new-page.md the starting yaml front matter looks like  </p>
+<p>To make a new page new-page.md the starting yaml front matter looks like</p>
 
 <pre><code>---
 layout: page
@@ -200,14 +200,14 @@ This links to [Daring Fireball][2]
 </code></pre>
 
 <h4 id="internal-links">Internal Links</h4>
-<p>I edited <a href="http://jekyllrb.com/docs/configuration/">_config.yml</a> like this  </p>
+<p>I edited <a href="http://jekyllrb.com/docs/configuration/">_config.yml</a> like this</p>
 
 <pre><code># Dates are not included in permalinks
 #permalink: none
 permalink: /:title
 </code></pre>
 
-<p>I do not need to add anyhting special to my yaml frontmatter!  </p>
+<p>I do not need to add anyhting special to my yaml frontmatter!</p>
 
 <p>And now
     this works as link to <a href="/Vascular-Analysis/stack/">stack</a>
@@ -220,7 +220,7 @@ this works as link to <a href="/Vascular-Analysis/stack/">stack</a></p>
 <p>this also works, <a href="/Vascular-Analysis/stack/" title="stack">Link to stack page</a></p>
 
 <h4 id="on-the-mac">On the mac</h4>
-<p>I am keeping my local Jekyll sites in /Users/cudmore/Sites/Vascular-Analysis  </p>
+<p>I am keeping my local Jekyll sites in /Users/cudmore/Sites/Vascular-Analysis</p>
 
 <p>To run Jekyll on a Mac,</p>
 
@@ -228,7 +228,7 @@ this works as link to <a href="/Vascular-Analysis/stack/">stack</a></p>
 jekyll serve --watch
 </code></pre>
 
-<p>View the site locally with  </p>
+<p>View the site locally with</p>
 
 <pre><code>http://localhost:4000/Vascular-Analysis/
 </code></pre>
@@ -254,11 +254,11 @@ jekyll serve --watch
 //with TOC<br />
 gimli -y -m -s ../css/main.css -w ‘–toc –footer-right “[page]/[toPage]”’ -o pdf<br />
 //without toc, -w  is passing commands to backend wkhtmltopdf<br />
-gimli -y -m -s ../css/main.css -w ‘–footer-right “[page]/[toPage]”’ -o pdf  </p>
+gimli -y -m -s ../css/main.css -w ‘–footer-right “[page]/[toPage]”’ -o pdf</p>
 </blockquote>
 
 <p>gimli -y -m -s ../css/main.css -w ‘–footer-right “[page]/[toPage]”’ -o ../pdf <br />
-gimli -y -m -s ../css/main.css -w ‘–header-left “[webpage]” –header-right “[page]/[toPage]”’ -o ../pdf  </p>
+gimli -y -m -s ../css/main.css -w ‘–header-left “[webpage]” –header-right “[page]/[toPage]”’ -o ../pdf</p>
 
 <p>gimli -y -f ./2015-02-21-simple-stack-db.md -s ../css/main.css -w ‘–page-size “letter” –footer-right “[page]/[toPage]”’ -o ../pdf/</p>
 
@@ -276,13 +276,13 @@ gimli -y -m -s ../css/main.css -w ‘–header-left “[webpage]” –header-ri
   <p>http://www.smashingmagazine.com/2013/12/17/imageoptim-cli-batch-compression-tool/</p>
 </blockquote>
 
-<p>This doesn’t work because jpegmini is not configured properly  </p>
+<p>This doesn’t work because jpegmini is not configured properly</p>
 
 <blockquote>
-  <p>imageoptim –jpeg-mini –image-alpha –quit –no-color –directory /Users/cudmore/Sites/Vascular-Analysis/images  </p>
+  <p>imageoptim –jpeg-mini –image-alpha –quit –no-color –directory /Users/cudmore/Sites/Vascular-Analysis/images</p>
 </blockquote>
 
-<p>This does work  </p>
+<p>This does work</p>
 
 <blockquote>
   <p>imageoptim –image-alpha –quit –no-color –directory /Users/cudmore/Sites/Vascular-Analysis/images</p>
@@ -290,13 +290,13 @@ gimli -y -m -s ../css/main.css -w ‘–header-left “[webpage]” –header-ri
 
 <h4 id="adding-a-tag-cloud">Adding a tag cloud</h4>
 
-<p>This worked  </p>
+<p>This worked</p>
 
 <blockquote>
   <p>http://blog.meinside.pe.kr/Adding-tag-cloud-and-archives-page-to-Jekyll/</p>
 </blockquote>
 
-<p>And is inspied on this:  </p>
+<p>And is inspied on this:</p>
 
 <blockquote>
   <p>http://kalapun.com/posts/liquid-tag-management-for-jekyll/</p>
@@ -305,7 +305,7 @@ gimli -y -m -s ../css/main.css -w ‘–header-left “[webpage]” –header-ri
 <ol>
   <li>make and fill in tags.html in /Vascular-Analysis/</li>
   <li>create and fill in _includes/post-tags.html</li>
-  <li>include it in this file _layouts/post.html with  </li>
+  <li>include it in this file _layouts/post.html with</li>
 </ol>
 
 <blockquote>
@@ -315,7 +315,7 @@ remove the .’s</p>
 
 <ol>
   <li>edit and add to styles.css</li>
-  <li>include some tags in each post with  </li>
+  <li>include some tags in each post with</li>
 </ol>
 
 <blockquote>
@@ -326,7 +326,7 @@ remove the .’s</p>
   - jekyll<br />
   - example<br />
   published: true<br />
-  —  </p>
+  —</p>
 </blockquote>
 
 <p>Now get rid of all this in /Vascular-Analysis/, it is redundant with the left TOC.<br />
